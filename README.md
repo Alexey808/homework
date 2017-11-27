@@ -1,4 +1,4 @@
-# my_project
+# README
 
 **hw1** -> html + css + table + bem + pseudo + form
 
