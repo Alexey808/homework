@@ -9,11 +9,11 @@
 
 ## homework.git
 
-**hw1** -> html + css + table + bem + pseudo + form
+**hw-№1 (v6)** -> html + css + table + bem + pseudo + form
 
 - [https://alexey808.github.io/homework/hw1](https://alexey808.github.io/homework/hw1)
 
-**hw2** -> hello *__(последнее)__*
+**hw-№2 (v1)** -> hello *__(последнее)__*
 
 - [https://alexey808.github.io/homework/hw2](https://alexey808.github.io/homework/hw2)
 
