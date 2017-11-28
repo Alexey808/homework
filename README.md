@@ -13,6 +13,24 @@
 
 - [https://alexey808.github.io/homework/hw1](https://alexey808.github.io/homework/hw1)
 
-**hw2** -> psd1
+**hw2** -> psd *__(последнее)__*
 
 - [https://alexey808.github.io/homework/hw2](https://alexey808.github.io/homework/hw2)
+
+---
+
+## Полезные ссылки
+- [photopea](https://www.photopea.com/)  
+- [caniuse - поддержка браузерами](https://caniuse.com/)  
+- [html валидатор](https://jigsaw.w3.org/css-validator/)  
+- [css валидатор](https://jigsaw.w3.org/css-validator/)  
+- [css/html справочник](https://webref.ru/ref)  
+- [БЭМ методология](https://ru.bem.info/)  
+- [Макеты PSD](https://drive.google.com/open?id=1qcC76KttJ2Wy5zhBaV4Oabe_oFTcIFN8)  
+
+### Презентации
+- [CSS](https://drive.google.com/open?id=1sBnc-3fVCdUGBJ2YHcpfT3JJlKqo-9bS)  
+- [HTML](https://drive.google.com/open?id=1fyHAC2kiieKPFWb9F5gDTEXh1xnKp4Tb)  
+- [Photoshop](https://drive.google.com/open?id=1OE9oAqnnvSV-FJNkSRdLNBGya65NoR7Y)  
+- [Тиблицы](https://drive.google.com/open?id=1S3UdTCsQO8EZKffI3jQ0qeyUvXj328Le)  
+

@@ -70,11 +70,11 @@ body {
 
 }
 .item__btn:hover {
-	background-color: #40daff;
+	background-color: #ffffff;
+	color: #33c1e3;
 	cursor: pointer;
 }
 .item__btn:active {
-    background-color: #d4f7ff;
     border: 1px solid #fff;
     color: #33c1e3;
 }
