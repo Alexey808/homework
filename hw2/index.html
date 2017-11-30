@@ -3,41 +3,107 @@
 
 <head>
 	
-	<meta charset="UTF-8">
-	<meta name="description" content="Краткое описание сайта">
-	<meta name="Keywords" content="html, css"> 
+    <meta charset="UTF-8">
+    <meta name="description" content="Краткое описание сайта">
+    <meta name="Keywords" content="html, css"> 
 
-	<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
-	<meta content="telephone=no" name="format-detection">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta content="telephone=no" name="format-detection">
 
-	<link rel="stylesheet" type="text/css" href="css/style-ie.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
 
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<title>Hello</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans" rel="stylesheet">
+
+    <title>about</title>
 
 </head>
 
 <body>
-	<div class="wrap">
-		<div class="item">
 
-			<div class="item__user">
-				<img class="photo" src="img/photo.png">
-			</div>
+    <!-- header -->
+    <header class="header">
+        <div class="wrapper">
+            <section class="header__user">
+                <div class="user">
+                    <div class="user__avatar"><img class="user__avatar-i" src="img/avatar.png"></div>
+                    <div class="user__name">Анатолий Анатольев</div>
+                    <div class="user__contact">
+                        <div class="contact">
+                            <div class="contact__button">Мои контакты
+                                <ul class="contact__list contact__list_hidden">
+                                    <li class="contact__list-mail">anatoly@mail.ru</li>
+                                    <li class="contact__list-tel">+7 987 345 62 12</li>
+                                    <li class="contact__list-skype">anatoly_</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <!-- /header -->
 
-			<div class="item__name">
-				<p class="item__name-first line">Анатолий</p>
-				<p class="item__neme-last line">Анатольевич</p>
-			</div>
 
-			<div class="item__footer">
-				<div class="item__btn">Перейти на сайт</div>
-			</div>
+    <!-- content -->
+    <main class="content">
+        <div class="wrapper">
 
-		</div>
-	</div>
+            <menu class="content__menu">
+                <div class="menu">
+                    <nav class="menu__point munu__point_active"><a href="#" class="menu__point-link menu__point-link_about">Обо мне</a></nav>
+                    <nav class="menu__point"><a href="#" class="menu__point-link menu__point-link_carer">Карьерный путь</a></nav>
+                    <nav class="menu__point"><a href="#" class="menu__point-link menu__point-link_portfolio">Портфолио</a></nav>
+                </div>
+            </menu>
+
+            <article class="content__about">
+                <div class="about">
+                    <div class="about__photo"><img class="about__photo-i" src="img/photo.png"></div>
+                    
+                    <div class="about__description">
+                        <h1 class="about__title">Обо мне</h1>
+                        <div class="about__text">
+                            Меня зовут Анатолий. Проживаю в городе Тольятти. В последнее время открыл для себя много интересного в JavaScript и всех сопутствующих тенденциях от Microsoft:ASP.NET 4, Knockout, SignalR, Upshot. Учусь писать тестируемый код на net. Делю логику на классы(стараюсь не забывать SOLID принципы) и тестировать юнит тестами. Хорошо пишу процедуры для MySQL. Чувствую в себе слабое владение client side и поэтому стараюсь восполнить данную нишу по мере возможностей. Из последних книг которые прочитал могу выделить: Professional ASP.NET MVC 3, JavaScript: The Good Parts, прочел много статей и туториалов. Знаком с “бандой четырех” и стараюсь использовать паттерны и практики где это необходимо и оправданно. Прочитал паттерны несколько раз но все равно есть непонимание некоторых моментов. Макконела также не обошел стороной. Иногда Читаю Фаулера выборочно: рефакторинг, PoEAA. Проблем с 5+ лет в IT было решено много разных.
+                        </div>
+                    </div>
+
+                    <div class="about__button">
+                        <button class="about__button-dw">Скачать резюме</button>
+                    </div>
+
+                </div>
+            </article>
+
+
+            
+        </div>
+    </main>
+    <!-- /content -->
+
+
+    <!-- content -->
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__ownership">Конфидециальность сайта</div>
+            <div class="footer__soc">
+                <ul class="soc">
+                    <li class="soc__f">
+                        <a href="#" class="soc__f-a"><img src="_img/ico/fs.svg" class="soc__f-i"></a>
+                    </li>
+                    <li class="soc__v">
+                        <a href="#" class="soc__v-a"><img src="_img/ico/vk.svg" class="soc__v-i"></a>
+                    </li>
+                    <li class="soc__t">
+                        <a href="#" class="soc__t-a"><img src="_img/ico/tw.svg" class="soc__a-i"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- /content -->
+
 </body>
 </html>
