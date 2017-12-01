@@ -13,7 +13,6 @@ html, body {
     
 }
 
-
 /* --- header ------------------------------------------ */
 
 .header {
@@ -25,11 +24,8 @@ html, body {
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
     border-bottom: 1px solid #f5f5f5;
     color: #414141;
-
 }
-.header__user {
-
-}
+.header__user {}
 .user {
     padding-top: 9px;
 }
@@ -51,13 +47,17 @@ html, body {
 .user__name {
     float: left;
     font-size: 18px;
-    
     line-height: 60px; /*выравниваем по вертикали*/
 }
 
 /* contact */
 .user__contact {
     float: right;
+}
+.user__contact:after { /*clear-fix*/
+  content: "";
+  clear: both;
+  display: block;
 }
 .contact {
     padding-top: 20px;
@@ -74,12 +74,9 @@ html, body {
     border-bottom: 1px dashed #e85f61;
     cursor: pointer;
 }
-
-
 .contact__list_hidden {
     visibility: hidden;
 }
-
 .contact__list-point {
     position: relative;
 }
@@ -107,14 +104,9 @@ html, body {
 .contact__list-point-link_skype:before {
     background-image: url(../img/ico/skype.svg);
 }
-
-
-
-
 .contact__button:hover .contact__list {
     /*display: block !important;*/
     visibility: visible;
-    
 }
 .contact__list {
     border: 1px solid #dddddd;
@@ -231,6 +223,11 @@ html, body {
     float: right;
     width: 720px; /*340+380*/
 }
+.content__about:after { /*clear-fix*/
+    content: "";
+    clear: both;
+    display: block;
+}
 .about {}
 .about__photo { 
     width: 220px; /*340px с полями*/
@@ -259,15 +256,24 @@ html, body {
     font-weight: lighter;
     line-height: 27px;
 }
-.about__description {
+.about__description { 
     float: left;
     width: 380px;
 }
-
+.about__description:after { /*clear-fix*/
+    content: "";
+    clear: both;
+    display: block;
+}
 /* button */
 .about__button {
     margin-top: 40px;
     float: right;
+}
+.about__button:after { /*clear-fix*/
+    content: "";
+    clear: both;
+    display: block;
 }
 .about__button-dw {
     font-family: 'Open Sans', sans-serif;
@@ -304,15 +310,17 @@ html, body {
     content: '\00A9';
     padding-right: 5px;
 }
-
-
 .footer__soc {
     float: right;
     margin-top: 10px;
 }
+.footer__soc:after { /*clear-fix*/
+    content: "";
+    clear: both;
+    display: block;
+}
 .soc {
     list-style: none;
-    
 }
 .soc__point {
     float: left;
@@ -346,8 +354,9 @@ html, body {
     z-index: 0;
     border-radius: 50%;
 }
+/* 
 #svg_1 {
- background-color: green;
+    background-color: green;
 }
 .soc__point-a {
 
@@ -362,7 +371,6 @@ html, body {
 
 }
 
-/* 
 #fs {}
 #canvas_background {}
 */
