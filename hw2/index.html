@@ -13,7 +13,6 @@
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <!-- <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans" rel="stylesheet">
 
     <title>about</title>
@@ -22,7 +21,7 @@
 
 <body>
 
-    <!-- header -->
+    <!-- header (чувствую что немного перебольщил со вложенностью, но этот элемент не простой, блоков и так достаточно)-->
     <header class="header">
         <div class="wrapper">
             <section class="header__user">
@@ -33,9 +32,15 @@
                         <div class="contact">
                             <div class="contact__button">Мои контакты
                                 <ul class="contact__list contact__list_hidden">
-                                    <li class="contact__list-mail">anatoly@mail.ru</li>
-                                    <li class="contact__list-tel">+7 987 345 62 12</li>
-                                    <li class="contact__list-skype">anatoly_</li>
+                                    <li class="contact__list-point">
+                                        <a href="#" class="contact__list-point-link contact__list-point-link_mail">anatoly@mail.ru</a>
+                                    </li>
+                                    <li class="contact__list-point">
+                                        <a href="#" class="contact__list-point-link contact__list-point-link_tel"">+7 987 345 62 12</a>
+                                    </li>
+                                    <li class="contact__list-point">
+                                        <a href="#" class="contact__list-point-link contact__list-point-link_skype">anatoly_</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -53,9 +58,15 @@
 
             <menu class="content__menu">
                 <div class="menu">
-                    <nav class="menu__point munu__point_active"><a href="#" class="menu__point-link menu__point-link_about">Обо мне</a></nav>
-                    <nav class="menu__point"><a href="#" class="menu__point-link menu__point-link_carer">Карьерный путь</a></nav>
-                    <nav class="menu__point"><a href="#" class="menu__point-link menu__point-link_portfolio">Портфолио</a></nav>
+                    <nav class="menu__point munu__point_active">
+                        <a href="#" class="menu__point-link menu__point-link_about">Обо мне</a>
+                    </nav>
+                    <nav class="menu__point">
+                        <a href="#" class="menu__point-link menu__point-link_carer">Карьерный путь</a>
+                    </nav>
+                    <nav class="menu__point">
+                        <a href="#" class="menu__point-link menu__point-link_portfolio">Портфолио</a>
+                    </nav>
                 </div>
             </menu>
 
@@ -90,14 +101,14 @@
             <div class="footer__ownership">Конфидециальность сайта</div>
             <div class="footer__soc">
                 <ul class="soc">
-                    <li class="soc__f">
-                        <a href="#" class="soc__f-a"><img src="_img/ico/fs.svg" class="soc__f-i"></a>
+                    <li class="soc__point">
+                        <a href="#" class="soc__point-a"><img src="img/ico/fs.svg" class="soc__point-i soc__point_fs"></a>
                     </li>
-                    <li class="soc__v">
-                        <a href="#" class="soc__v-a"><img src="_img/ico/vk.svg" class="soc__v-i"></a>
+                    <li class="soc__point">
+                        <a href="#" class="soc__point-a"><img src="img/ico/vk.svg" class="soc__point-i soc__point_vk"></a>
                     </li>
-                    <li class="soc__t">
-                        <a href="#" class="soc__t-a"><img src="_img/ico/tw.svg" class="soc__a-i"></a>
+                    <li class="soc__point">
+                        <a href="#" class="soc__point-a"><img src="img/ico/tw.svg" class="soc__point-i soc__point_tw"></a>
                     </li>
                 </ul>
             </div>
