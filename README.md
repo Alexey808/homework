@@ -15,7 +15,7 @@
 
 **hw-№2**
 
-- [hello](https://alexey808.github.io/homework/hw2/hello.html)
+- [hello](https://alexey808.github.io/homework/hw1/hello.html)
 - [about](https://alexey808.github.io/homework/hw2/index.html) *__(последнее)__*
 
 ---
