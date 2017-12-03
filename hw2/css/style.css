@@ -60,7 +60,7 @@ html, body {
   display: block;
 }
 .contact {
-    padding-top: 20px;
+    margin-top: 20px;
 }
 .contact__button {
     border-bottom: 1px dashed #32c3e5;
@@ -68,6 +68,16 @@ html, body {
     color: #32c3e5;
     font-weight: bold;
     position: relative;
+}
+.contact__button:after {
+    /*псевдоблок для ховера*/
+    // content: '';
+    // width: 100px;
+    // height: 100px;
+    // position: absolute;
+    // top: 0px;
+    // left: 0px;
+    // background-color: green;
 }
 .contact__button:hover {
     color: #e85f61;
