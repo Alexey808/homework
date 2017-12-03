@@ -1,4 +1,4 @@
-/* --- main --- */
+ /*--- main --- */
 * {
     margin: 0;
     padding: 0;
@@ -87,54 +87,46 @@ html, body {
 .contact__list_hidden {
     visibility: hidden;
 }
-.contact__list-point {
+.contact__point {
     position: relative;
 }
-.contact__list-point-link {
-    padding-left: 25px;
+.contact__point-link {
     text-decoration: none;
     color: #727272;
+    white-space: nowrap; /*позволяет облочку растягиватся*/
 }
-.contact__list-point-link:before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    top: 10px;
-    left: 0px;
-    background-size: cover;
+.contact__point-link:hover {
     color: #33c1e3;
 }
-.contact__list-point-link_mail:before {
-    background-image: url(../img/ico/mail.svg);
-}
-.contact__list-point-link_tel:before {
-    background-image: url(../img/ico/telephone.svg);
-}
-.contact__list-point-link_skype:before {
-    background-image: url(../img/ico/skype.svg);
-}
 .contact__button:hover .contact__list {
-    /*display: block !important;*/
     visibility: visible;
+}
+
+.contact__button:hover:after {
+    content: '';
+    position: absolute;
+    width: 190px;
+    height: 179px;
+    background-color: rgba(85, 85, 85, 0.00);
+    border-radius: 50px 50px 10px 10px;
+    left: -31px;
+    top: -2px;
+    z-index: -1;
 }
 .contact__list {
     border: 1px solid #dddddd;
     border-radius: 10px;
-    height: 120px;
-    width: 160px;
     background-color: #ffffff;
     position: absolute;
     color: #727272;
     list-style: none;
     font-size: 18px;
     font-weight: normal;
-    top: 40px;
+    top: 36px;
     left: -32px;
     padding: 10px 15px;
     line-height: 40px;
 }
-
 .contact__list:before {
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
@@ -142,7 +134,7 @@ html, body {
     border-bottom-color: #dddddd;
     position: absolute;
     bottom: 100%;
-    right: 90px;
+    left: 90px;
     content: '';
 } 
 .contact__list:after {
@@ -152,7 +144,7 @@ html, body {
     border-bottom-color: #f6f6f6;
     position: absolute;
     bottom: 100%;
-    right: 91px;
+    left: 91px;
     content: '';
 }
 
@@ -185,48 +177,20 @@ html, body {
 .munu__point_active {
     border-right: 6px solid #32c8e9 !important;
 }
-.munu__point_active .menu__point-link {
+.munu__point_active .menu__link {
     color: #33c1e3 !important;
     font-weight: bold;
 }
-.menu__point-link {
+.menu__link {
     text-decoration: none;
     color: #414141;
-    position: relative;
 }
-.menu__point-link:hover {
+.menu__link:hover {
     color: #33c1e3;
 }
-.menu__point-link:hover:before {
-    color: #33c1e3 !important;
+.menu__link-tit {
+    padding-left: 5px;
 }
-
-.menu__point-link:before {
-    content: "";
-    width: 26px;
-    height: 26px;
-    position: absolute;
-    top: -3px;
-    left: -30px;
-    background-size: cover;
-    color: #414141;
-}
-
-.menu__point-link_about:before {
-    background-image: url(../img/ico/user-secret.svg);
-}
-.menu__point-link_carer:before {
-    background-image: url(../img/ico/rocket.svg);
-}
-.menu__point-link_portfolio:before {
-    background-image: url(../img/ico/briefcase.svg);
-}
-
-/*
-#user-secret, #rocket, #briefcase {
-    color: green;
-}
-*/
 
 /* about */
 .content__about {
@@ -263,7 +227,7 @@ html, body {
     height: 300px;
     font-size: 18px;
     overflow: auto;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 27px;
 }
 .about__description { 
@@ -324,63 +288,32 @@ html, body {
     float: right;
     margin-top: 10px;
 }
-.footer__soc:after { /*clear-fix*/
-    content: "";
-    clear: both;
-    display: block;
-}
 .soc {
     list-style: none;
 }
 .soc__point {
-    float: left;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-    /* background-color: #ffffff;*/
-    color: #9c9c9c;
-    overflow: hidden;
-    margin-left: 8px;
-    position: relative;
+    background-color: #9c9c9c;
+    margin: 0 1px;
 }
-
-.soc li:first-child {
-    margin-left: 0px
+.soc__link {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
-.soc__point-i{
-    max-width: 100%;
-    z-index: 1;
-    position: absolute;
+.soc__link-elem {
+    background-color: #989898;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 30px !important;
+    color: #414141;
 }
-
-.soc__point-a:after {
-    content: '';
-    width: 24px;
-    height: 24px;
-    background-color: white;
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    z-index: 0;
-    border-radius: 50%;
+.soc__link:hover .soc__link-elem {
+    background: #5d99c3;
+    color: #fff;
 }
-/* 
-#svg_1 {
-    background-color: green;
-}
-.soc__point-a {
-
-}
-.soc__point_fs {
-   
-}
-.soc__point_vk {
- 
-}
-.soc__point_tw {
-
-}
-
-#fs {}
-#canvas_background {}
-*/
