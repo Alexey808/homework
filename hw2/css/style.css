@@ -10,14 +10,18 @@ html, body {
 .wrapper {
     width: 940px;
     margin: 0 auto;
-    
 }
-
+.wrapper_flex {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
 /* --- header ------------------------------------------ */
+.header__user {}
 
 .header {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     height: 80px;
     width: 100%;
     background-color: #ffffff;
@@ -25,14 +29,14 @@ html, body {
     border-bottom: 1px solid #f5f5f5;
     color: #414141;
 }
-.header__user {}
 .user {
     padding-top: 9px;
+    display: flex;
+    justify-content: space-between;
 }
 .user__avatar {
     float: left;
     border-radius: 50%;
-
     width: 60px;
     height: 60px;
     border-radius: 30px;
@@ -41,26 +45,24 @@ html, body {
     overflow: hidden;
     margin-right: 20px;
 }
+.user__avatar-name {
+    width: 400px;
+}
 .user__avatar-i {
     max-width: 100%;
 }
 .user__name {
-    float: left;
+    white-space: nowrap;
     font-size: 18px;
     line-height: 60px; /*выравниваем по вертикали*/
 }
 
 /* contact */
+.contact {}
+
 .user__contact {
-    float: right;
-}
-.user__contact:after { /*clear-fix*/
-  content: "";
-  clear: both;
-  display: block;
-}
-.contact {
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
 }
 .contact__button {
     border-bottom: 1px dashed #32c3e5;
@@ -68,16 +70,6 @@ html, body {
     color: #32c3e5;
     font-weight: bold;
     position: relative;
-}
-.contact__button:after {
-    /*псевдоблок для ховера*/
-    // content: '';
-    // width: 100px;
-    // height: 100px;
-    // position: absolute;
-    // top: 0px;
-    // left: 0px;
-    // background-color: green;
 }
 .contact__button:hover {
     color: #e85f61;
@@ -101,7 +93,6 @@ html, body {
 .contact__button:hover .contact__list {
     visibility: visible;
 }
-
 .contact__button:hover:after {
     content: '';
     position: absolute;
@@ -160,7 +151,6 @@ html, body {
 /* menu */
 .content__menu {
     color: #414141;
-    float: left;
     width: 220px;
 }
 .menu {
@@ -194,15 +184,14 @@ html, body {
 
 /* about */
 .content__about {
-    float: right;
     width: 720px; /*340+380*/
 }
-.content__about:after { /*clear-fix*/
-    content: "";
-    clear: both;
-    display: block;
+.about {
+    display: flex;
+    flex-wrap: wrap; /*позволяем переносить*/
+    justify-content: flex-end; /*перенос в конец строки*/
+    align-content: flex-start; /*строки идут последовательно*/
 }
-.about {}
 .about__photo { 
     width: 220px; /*340px с полями*/
     height: 220px;
@@ -211,7 +200,6 @@ html, body {
     border: 5px solid #ffffff;
     overflow: hidden;
     margin: 0 55px;
-    float: left;
 }
 .about__photo-i {
     max-width: 100%;
@@ -231,23 +219,12 @@ html, body {
     line-height: 27px;
 }
 .about__description { 
-    float: left;
     width: 380px;
 }
-.about__description:after { /*clear-fix*/
-    content: "";
-    clear: both;
-    display: block;
-}
+
 /* button */
 .about__button {
     margin-top: 40px;
-    float: right;
-}
-.about__button:after { /*clear-fix*/
-    content: "";
-    clear: both;
-    display: block;
 }
 .about__button-dw {
     font-family: 'Open Sans', sans-serif;
@@ -277,7 +254,6 @@ html, body {
     color: #727272;
 }
 .footer__ownership {
-    float: left;
     line-height: 50px;
 }
 .footer__ownership::before {
@@ -285,11 +261,14 @@ html, body {
     padding-right: 5px;
 }
 .footer__soc {
-    float: right;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
 }
 .soc {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 105px;
 }
 .soc__point {
     display: inline-block;

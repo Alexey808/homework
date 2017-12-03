@@ -4,20 +4,27 @@
 <head>
 	
     <meta charset="UTF-8">
-    <meta name="description" content="Краткое описание сайта">
-    <meta name="Keywords" content="html, css"> 
-
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <meta content="telephone=no" name="format-detection">
 
-
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Open+Sans" rel="stylesheet">
+    <!-- Шрифты -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700|Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 
+    <!-- Иконки -->
     <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- jQuery и custom-scrollbar -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <script src="https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css">
+    <script async src="js/mCustomScrollbar.js"></script>
+    <!-- /jQuery и custom-scrollbar -->
 
     <title>about</title>
 
@@ -25,13 +32,15 @@
 
 <body>
 
-    <!-- header (чувствую что немного перебольщил со вложенностью, но этот элемент не простой, блоков и так достаточно)-->
+    <!-- header-->
     <header class="header">
         <div class="wrapper">
             <section class="header__user">
                 <div class="user">
-                    <div class="user__avatar"><img class="user__avatar-i" src="img/avatar.png"></div>
-                    <div class="user__name">Анатолий Анатольев</div>
+                    <div class="user__avatar-name">
+                        <div class="user__avatar"><img class="user__avatar-i" src="img/avatar.png"></div>
+                        <div class="user__name">Анатолий Анатольев</div>
+                    </div>
                     <div class="user__contact">
                         <div class="contact">
                             <div class="contact__button">Мои контакты
@@ -67,7 +76,7 @@
 
     <!-- content -->
     <main class="content">
-        <div class="wrapper">
+        <div class="wrapper wrapper_flex">
 
             <menu class="content__menu">
                 <div class="menu">
@@ -116,7 +125,7 @@
 
     <!-- content -->
     <footer class="footer">
-        <div class="wrapper">
+        <div class="wrapper wrapper_flex">
             <div class="footer__ownership">Конфидециальность сайта</div>
             <div class="footer__soc">
                 <ul class="soc">
@@ -140,6 +149,12 @@
         </div>
     </footer>
     <!-- /content -->
+
+
+    <!-- Стиль для скролла -->
+    <script>
+
+    </script>
 
 </body>
 </html>
