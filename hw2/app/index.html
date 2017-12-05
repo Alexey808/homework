@@ -2,12 +2,12 @@
 <html lang="ru">
 
 <head>
-	
+    
     <meta charset="UTF-8">
     <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
     <meta content="telephone=no" name="format-detection">
 
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
     <!-- Шрифты -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700|Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
@@ -32,129 +32,9 @@
 
 <body>
 
-    <!-- header-->
-    <header class="header">
-        <div class="wrapper">
-            <section class="header__user">
-                <div class="user">
-                    <div class="user__avatar-name">
-                        <div class="user__avatar"><img class="user__avatar-i" src="img/avatar.png"></div>
-                        <div class="user__name">Анатолий Анатольев</div>
-                    </div>
-                    <div class="user__contact">
-                        <div class="contact">
-                            <div class="contact__button">Мои контакты
-                                <ul class="contact__list contact__list_hidden">
-                                    <li class="contact__point">
-                                        <a href="mailto:laiten808@gmail.com" class="contact__point-link">
-                                            <i class="contact__point-ico fa fa-envelope" aria-hidden="true"></i>
-                                            <span class="contact__point-data">anatoly@mail.ru</span>
-                                        </a>
-                                    </li>
-                                    <li class="contact__list-point">
-                                        <a href="tel:+79873456212" class="contact__point-link">
-                                            <i class="contact__point-ico fa fa-phone" aria-hidden="true"></i>
-                                            <span class="contact__point-data">+7 987 345 62 12</span>
-                                        </a>
-                                    </li>
-                                    <li class="contact__list-point">
-                                        <a href="skype:anatoly_?call" class="contact__point-link">
-                                            <i class="contact__point-ico fa fa-skype" aria-hidden="true"></i>
-                                            <span class="contact__point-data">anatoly_</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </header>
-    <!-- /header -->
-
-
-    <!-- content -->
-    <main class="content">
-        <div class="wrapper wrapper_flex">
-
-            <menu class="content__menu">
-                <div class="menu">
-                    <nav class="menu__point munu__point_active">
-                        <a href="#" class="menu__link">
-                            <i class="points__link-ico fa fa-user-secret" aria-hidden="true"></i>
-                            <span class="points__link-tit">Обо мне</span>
-                        </a>
-                    </nav>
-                    <nav class="menu__point">
-                        <a href="#" class="menu__link">
-                            <i class="points__link-ico fa fa-rocket" aria-hidden="true"></i>
-                            <span class="points__link-tit">Карьерный путь</span>
-                        </a>
-                    </nav>
-                    <nav class="menu__point">
-                        <a href="#" class="menu__link">
-                            <i class="menu__link-ico fa fa-briefcase" aria-hidden="true"></i>
-                            <span class="menu__link-tit">Портфолио</span>
-                        </a>
-                    </nav>
-                </div>
-            </menu>
-
-            <section class="content__about">
-                <div class="about">
-                    <div class="about__photo"><img class="about__photo-i" src="img/photo.png"></div>
-                    
-                    <div class="about__description">
-                        <h1 class="about__title">Обо мне</h1>
-                        <div class="about__text">
-                            Меня зовут Анатолий. Проживаю в городе Тольятти. В последнее время открыл для себя много интересного в JavaScript и всех сопутствующих тенденциях от Microsoft:ASP.NET 4, Knockout, SignalR, Upshot. Учусь писать тестируемый код на net. Делю логику на классы (стараюсь не забывать SOLID принципы) и тестировать юнит тестами. Хорошо пишу процедуры для MySQL. Чувствую в себе слабое владение client side и поэтому стараюсь восполнить данную нишу по мере возможностей. Из последних книг которые прочитал могу выделить: Professional ASP.NET MVC 3, JavaScript: The Good Parts, прочел много статей и туториалов. Знаком с “бандой четырех” и стараюсь использовать паттерны и практики где это необходимо и оправданно. Прочитал паттерны несколько раз но все равно есть непонимание некоторых моментов. Макконела также не обошел стороной. Иногда Читаю Фаулера выборочно: рефакторинг, PoEAA. Проблем с 5+ лет в IT было решено много разных.
-                        </div>
-                    </div>
-
-                    <div class="about__button">
-                        <button class="about__button-dw">Скачать резюме</button>
-                    </div>
-
-                </div>
-            </section>
-        </div>
-    </main>
-    <!-- /content -->
-
-
-    <!-- content -->
-    <footer class="footer">
-        <div class="wrapper wrapper_flex">
-            <div class="footer__ownership">Конфидециальность сайта</div>
-            <div class="footer__soc">
-                <ul class="soc">
-                    <li class="soc__point">
-                        <a href="#" class="soc__link">
-                            <i class="soc__link-elem fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="soc__point">
-                        <a href="#" class="soc__link">
-                            <i class="soc__link-elem fa fa-vk" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="soc__point">
-                        <a href="#" class="soc__link">
-                            <i class="soc__link-elem fa fa-twitter" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <!-- /content -->
-
-
-    <!-- Стиль для скролла -->
-    <script>
-
-    </script>
+    //= pages/header.html
+    //= pages/content.html
+    //= pages/footer.html
 
 </body>
 </html>

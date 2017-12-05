@@ -3,3 +3,304 @@ $grey: #727272;
 $dark-gray: #414141;
 $blue: #33c1e3;
 $red: e85f61;
+
+
+ /*--- main --- */
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    font-family: 'Fira Sans', sans-serif;
+
+}
+.wrapper {
+    width: 940px;
+    margin: 0 auto;
+}
+.wrapper_flex {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+/* --- header ------------------------------------------ */
+.header__user {}
+
+.header {
+    position: fixed;
+    z-index: 2;
+    height: 80px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    border-bottom: 1px solid #f5f5f5;
+    color: #414141;
+}
+.user {
+    padding-top: 9px;
+    display: flex;
+    justify-content: space-between;
+}
+.user__avatar {
+    float: left;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #f6f6f6;
+    border: 1px solid #d6d6d6;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.user__avatar-name {
+    width: 400px;
+
+}
+.user__avatar-i {
+    max-width: 100%;
+}
+.user__name {
+    white-space: nowrap;
+    font-size: 18px;
+    line-height: 60px; /*выравниваем по вертикали*/
+}
+
+/* contact */
+.contact {}
+
+.user__contact {
+    display: flex;
+    align-items: center;
+}
+.contact__button {
+    border-bottom: 1px dashed #32c3e5;
+    font-size: 18px;
+    color: #32c3e5;
+    font-weight: bold;
+    position: relative;
+}
+.contact__button:hover {
+    color: #e85f61;
+    border-bottom: 1px dashed #e85f61;
+    cursor: pointer;
+}
+.contact__list_hidden {
+    visibility: hidden;
+}
+.contact__point {
+    position: relative;
+}
+.contact__point-link {
+    text-decoration: none;
+    color: #727272;
+    white-space: nowrap; /*позволяет облочку растягиватся*/
+}
+.contact__point-link:hover {
+    color: #33c1e3;
+}
+.contact__button:hover .contact__list {
+    visibility: visible;
+}
+.contact__button:hover:after {
+    content: '';
+    position: absolute;
+    width: 190px;
+    height: 45px;
+    background-color: rgba(85, 85, 85, 0);
+    border-radius: 50px 50px 10px 10px;
+    left: -31px;
+    top: -2px;
+}
+.contact__list {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    color: #727272;
+    list-style: none;
+    font-size: 18px;
+    font-weight: normal;
+    top: 36px;
+    left: -32px;
+    padding: 10px 15px;
+    line-height: 40px;
+}
+.contact__list:before {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 11px solid #ffffff;
+    border-bottom-color: #dddddd;
+    position: absolute;
+    bottom: 100%;
+    left: 90px;
+    content: '';
+} 
+.contact__list:after {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #dddddd;
+    border-bottom-color: #f6f6f6;
+    position: absolute;
+    bottom: 100%;
+    left: 91px;
+    content: '';
+}
+
+/* --- content ----------------------------------------- */
+
+.content {
+    padding-top: 106px; /*81+25*/
+    color: #727272;
+    height: calc(100% - 156px);
+    background-color: #f6f6f6;
+    min-height: 440px;
+}
+/* menu */
+.content__menu {
+    color: #414141;
+    width: 220px;
+}
+.menu {
+    margin-right: 31px; /*25+6*/
+}
+.menu__point {
+    border-right: 6px solid #f6f6f6;
+    line-height: 44px;
+    text-align: right;
+    width: 100%;
+    padding-right: 25px;
+    font-size: 18px;
+}
+.munu__point_active {
+    border-right: 6px solid #32c8e9 !important;
+}
+.munu__point_active .menu__link {
+    color: #33c1e3 !important;
+    font-weight: bold;
+}
+.menu__link {
+    text-decoration: none;
+    color: #414141;
+}
+.menu__link:hover {
+    color: #33c1e3;
+}
+.menu__link-tit {
+    padding-left: 5px;
+}
+
+/* about */
+.content__about {
+    width: 720px; /*340+380*/
+}
+.about {
+    display: flex;
+    flex-wrap: wrap; /*позволяем переносить*/
+    justify-content: flex-end; /*перенос в конец строки*/
+    align-content: flex-start; /*строки идут последовательно*/
+}
+.about__photo { 
+    width: 220px; /*340px с полями*/
+    height: 220px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+    margin: 0 55px;
+}
+.about__photo-i {
+    max-width: 100%;
+}
+.about__title {
+    width: 100%;
+    height: 50px;
+    font-size: 35px;
+    color: #414141;
+}
+.about__text {
+    width: 100%;
+    height: 300px;
+    font-size: 18px;
+    overflow: auto;
+    font-weight: 300;
+    line-height: 27px;
+}
+.about__description { 
+    width: 380px;
+}
+
+/* button */
+.about__button {
+    margin-top: 40px;
+}
+.about__button-dw {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    border: 2px solid #e85f61;
+    font-size: 14px;
+    color: #e85f61;
+    text-align: center;
+    width: 173px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    clear: right;
+}
+.about__button-dw:hover {
+    background-color: #e85f61;
+    color: #f6f6f6;
+    cursor: pointer;
+}
+
+/* --- footer ------------------------------------------ */
+
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #414141;
+    color: #727272;
+}
+.footer__ownership {
+    line-height: 50px;
+}
+.footer__ownership::before {
+    content: '\00A9';
+    padding-right: 5px;
+}
+.footer__soc {
+    display: flex;
+    align-items: center;
+}
+.soc {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 105px;
+}
+.soc__point {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 30px;
+    height: 30px;
+    background-color: #9c9c9c;
+    margin: 0 1px;
+}
+.soc__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.soc__link-elem {
+    background-color: #989898;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 30px !important;
+    color: #414141;
+}
+.soc__link:hover .soc__link-elem {
+    background: #5d99c3;
+    color: #fff;
+}
