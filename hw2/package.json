@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp": "NODE_ENV=production gulp",
+    "gulp-dev": "NODE_ENV=dev gulp"
   },
   "keywords": [],
   "author": "",
