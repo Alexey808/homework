@@ -1,6 +1,7 @@
 var gulp         = require('gulp'),
     sass         = require('gulp-sass'),
     rigger       = require('gulp-rigger'),
+    browserSync  = require('browser-sync'),
     autoprefixer = require('gulp-autoprefixer');
 
 
@@ -35,35 +36,46 @@ var gulp         = require('gulp'),
 
 //--- таск html:build -> Сборка html файлов.
     gulp.task('html:build', function () {
-        gulp.app(path.app.html)
+        gulp.src(path.src.html)
             .pipe(rigger())
             .pipe(gulp.dest(path.build.html))
+            .pipe(reload({stream: true}));      //И перезагрузим наш сервер для обновлений
     });
 
 //--- таск js:build -> Сборка js файлов.
     gulp.task('js:build', function () {
-        gulp.app(path.app.js)
+        gulp.src(path.src.js)
             .pipe(rigger())
+            .pipe(uglify())
             .pipe(gulp.dest(path.build.js))
+            .pipe(reload({stream: true}));
     });
 
 //--- таск style:guild -> Сборка css файлов.
     gulp.task('style:build', function () {
-        gulp.app(path.app.style)
+        gulp.src(path.src.style)
             .pipe(sass())
             .pipe(autoprefixer())
             .pipe(gulp.dest(path.build.css))
+            .pipe(reload({stream: true}));
     });
 
 //--- таск image:build -> Сборка картинок.
     gulp.task('image:build', function () {
-        gulp.app(path.app.img)
+        gulp.src(path.src.img)
+            .pipe(imagemin({
+                progressive: true,
+                svgoPlugins: [{removeViewBox: false}],
+                use: [pngquant()],
+                interlaced: true
+            }))
             .pipe(gulp.dest(path.build.img))
+            .pipe(reload({stream: true}));
     });
 
 //--- таск fonts:build -> Собираем шрифты.
     gulp.task('fonts:build', function() {
-        gulp.app(path.app.fonts)
+        gulp.src(path.src.fonts)
             .pipe(gulp.dest(path.build.fonts))
     });
 
