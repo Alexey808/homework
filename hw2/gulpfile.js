@@ -19,7 +19,7 @@ gulp.task('default', function() {
     if (ENV != 'production') {
         tasks.push('watch');
     } else {
-        gulp.src(['./css/*'], {read: false}).pipe(clean());
+        gulp.src(['./src/*'], {read: false}).pipe(clean());
     }
 
     gulp.start(tasks);
