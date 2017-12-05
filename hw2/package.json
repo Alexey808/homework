@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "gulp": "NODE_ENV=production gulp",
-    "gulp-dev": "NODE_ENV=dev gulp"
+    "gulp": "gulp",
+    "gulp-dev": "gulp default watch"
   },
   "keywords": [],
   "author": "",

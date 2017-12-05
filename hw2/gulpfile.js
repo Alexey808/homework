@@ -27,6 +27,7 @@ gulp.task('default', function() {
 
 // Задача для автозапуска нужных подзадач
 gulp.task('watch', function () {
+    ENV = 'dev';
     gulp.watch('sass/**/*.scss', ['sass']);
 });
 
