@@ -8,6 +8,7 @@
     <meta content="telephone=no" name="format-detection">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="src/style.css">
 
     <!-- Шрифты -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700|Open+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
@@ -101,8 +102,11 @@
                 </div>
             </menu>
 
-            <section class="content__about">
-                <div class="about">
+            
+            <div class="content__section" style="background-color: #eee;">
+
+                <!-- about -->
+                <div class="about" style="display: none">
                     <div class="about__photo"><img class="about__photo-i" src="img/photo.png"></div>
                     
                     <div class="about__description">
@@ -115,9 +119,60 @@
                     <div class="about__button">
                         <button class="about__button-dw">Скачать резюме</button>
                     </div>
-
                 </div>
-            </section>
+                <!-- /about -->
+
+
+                 <!-- carrer -->
+                <section class="career">
+                    <h2 class="career__title"></h2>
+                    <div class="career__picture"></div>
+                    <div class="career__box">
+                        <div class="box">
+                            <div class="box__elem">
+                                <div class="box__elem-year">2016</div>
+                                <div class="box__elem-title">"Weblime"</div>
+                                <div class="box__elem-text">
+                                    <p class="box__elem-line">Старший разработчик</p>
+                                    <p class="box__elem-line">2015 - по насточщее время</p>
+                                </div>
+                            </div>
+                            <div class="box__elem">
+                                <div class="box__elem-year">2015</div>
+                                <div class="box__elem-title">"Weblime"</div>
+                                <div class="box__elem-text">
+                                    <p class="box__elem-line">Средний разработчик</p>
+                                    <p class="box__elem-line">2013 - 2015</p>
+                                </div>
+                            </div>
+                            <div class="box__elem">
+                                <div class="box__elem-year">2013</div>
+                                <div class="box__elem-title">"Weblime"</div>
+                                <div class="box__elem-text">
+                                    <p class="box__elem-line">Младший разработчик</p>
+                                    <p class="box__elem-line">2012 - 2013</p>
+                                </div>
+                            </div>
+                            <div class="box__elem">
+                                <div class="box__elem-year">2012</div>
+                                <div class="box__elem-title">"Weblime"</div>
+                                <div class="box__elem-text">
+                                    <p class="box__elem-line">Стажер</p>
+                                    <p class="box__elem-line">2011 - 2012</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- /carrer -->
+
+
+                <!-- portfolio -->
+                <section class="portfolio" style="display: none"></section>
+                <!-- /portfolio -->
+                           
+            </div>
+
         </div>
     </main>
     <!-- /content -->

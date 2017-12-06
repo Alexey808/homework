@@ -1,5 +1,14 @@
-@import "variables";
+/* --- main -------------------------------------------- */
+@import "_variables.scss";
 
-.block {
-	@include flex();
-}
+
+/* --- about ------------------------------------------- */
+@import "about/_about.scss";
+
+
+/* --- career ------------------------------------------ */
+@import "career/_career.scss";
+
+
+/* --- portfolio --------------------------------------- */
+@import "portfolio/_portfolio.scss";
