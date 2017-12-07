@@ -2,15 +2,17 @@
     // font-family: $fira-sans;
     font-size: 21px;
     position: relative;
+    margin-left: 100px;
 
     &__elem {
-        width: 360px;
-        height: 87px;
+        width: 340px;
+        // height: 70px;
         border-radius: 10px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         position: relative;
         padding: 20px;
         margin-bottom: 20px;
+        background-color: $white;
     }
     &__elem:hover {
         background-color: $blue;
@@ -18,19 +20,49 @@
         color: $white;
     }
     &__elem:before {
+        // content: '';
+        // position: absolute;
+        // width: 10px;
+        // height: 10px;
+        // background-color: $blue;
+        // top: 35%;
+        // left: -55px;
+        // z-index: 1;
+        // border-radius: 50%;
+        // border: 5px solid $grey-white;
+    }
+    &__elem:hover:before {
+        // border: 5px solid $blue-career-circle;
+    }
+    &__elem-year {
+        position: absolute;
+        left: -73px;
+        top: 42%;
+        font-size: 14px;
+        font-weight: 300; /*light*/
+    }
+    &__elem-year:after {
         content: '';
         position: absolute;
         width: 10px;
         height: 10px;
         background-color: $blue;
-        top: 35%;
-        left: -55px;
+        top: -5%;
+        right: -24px;
         z-index: 1;
         border-radius: 50%;
         border: 5px solid $grey-white;
     }
-    &__elem:hover:before {
+    &__elem:hover &__elem-year {
+        color: $blue;
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0px 0 0 -10px;
+    }
+    &__elem:hover &__elem-year:after {
         border: 5px solid $blue-career-circle;
+        right: -25px;
+        
     }
     &__elem-title {
         font-weight: 500; /*medium*/
@@ -44,9 +76,9 @@
         content: '';
         position: absolute;
         width: 1px;
-        height: 440px;
+        height: 76%;
         background-color: $shadows;
-        top: 56px;
-        left: -45px;
+        top: 50px;
+        left: -29px;
     }
 }
