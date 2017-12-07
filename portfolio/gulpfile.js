@@ -11,7 +11,8 @@ var gulpif        = require('gulp-if');
 var clean         = require('gulp-clean');
 
 // Окружение
-const ENV = process.env.NODE_ENV || 'production';
+//const ENV = process.env.NODE_ENV || 'production';
+var ENV = 'dev';
 
 // Задача запускаемая по умолчанию
 gulp.task('default', function() {
@@ -27,7 +28,7 @@ gulp.task('default', function() {
 
 // Задача для автозапуска нужных подзадач
 gulp.task('watch', function () {
-    ENV = 'dev';
+    // ENV = 'dev';
     gulp.watch('sass/**/*.scss', ['sass']);
 });
 

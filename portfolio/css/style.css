@@ -143,9 +143,10 @@ html, body {
 .content {
     padding-top: 106px; /*81+25*/
     color: #727272;
-    height: calc(100% - 156px);
+    // height: calc(100% - 156px);
+    
     background-color: #f6f6f6;
-    min-height: 440px;
+    min-height: calc(100% - 156px);
 }
 /* menu */
 .content__menu {

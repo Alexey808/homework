@@ -1,0 +1,84 @@
+.career {
+    font-family: 'Fira Sans', sans-serif;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__title {
+        width: 100%;
+        color: $grey-black;
+        font-size: 35px;
+        padding: 0px 0 20px 0;
+    }
+    &__picture {
+        width: 220px;
+        height: 220px;
+        border-radius: 9px;
+        background-color: $grey;
+        overflow: hidden;
+        background-position: center center;
+        margin-right: 20px;
+    }
+    &__picture-img {
+        margin: -5px 0 0 -92px;
+    }
+    &__box {
+        width: calc(100% - 240px); /*100%-20+220*/
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
+
+.box {
+    // font-family: $fira-sans;
+    font-size: 21px;
+    position: relative;
+
+    &__elem {
+        width: 360px;
+        height: 87px;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        position: relative;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    &__elem:hover {
+        background-color: $blue;
+        cursor: pointer;
+        color: #ffffff;
+    }
+    &__elem:before {
+        content: '';
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: $blue;
+        top: 35%;
+        left: -55px;
+        z-index: 1;
+        border-radius: 50%;
+        border: 5px solid $white;
+    }
+    &__elem:hover:before {
+        border: 5px solid #94dff2;
+    }
+    &__elem-title {
+        font-weight: 500; /*medium*/
+    }
+    &__elem-text {
+        
+    }
+    &__elem-line {}
+}
+
+.box:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 440px;
+    background-color: #ddd;
+    top: 56px;
+    left: -45px;
+}

@@ -1,14 +1,14 @@
 /* --- main -------------------------------------------- */
-@import "_variables.scss";
-
+@import "variables.scss";
+@import "fonts.scss";
 
 /* --- about ------------------------------------------- */
-@import "about/_about.scss";
+@import "about/about.scss";
 
 
 /* --- career ------------------------------------------ */
-@import "career/_career.scss";
+@import "career/career.scss";
 
 
 /* --- portfolio --------------------------------------- */
-@import "portfolio/_portfolio.scss";
+@import "portfolio/portfolio.scss";
