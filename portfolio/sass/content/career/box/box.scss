@@ -6,7 +6,6 @@
 
     &__elem {
         width: 340px;
-        // height: 70px;
         border-radius: 10px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.2);
         position: relative;
@@ -18,21 +17,6 @@
         background-color: $blue;
         cursor: pointer;
         color: $white;
-    }
-    &__elem:before {
-        // content: '';
-        // position: absolute;
-        // width: 10px;
-        // height: 10px;
-        // background-color: $blue;
-        // top: 35%;
-        // left: -55px;
-        // z-index: 1;
-        // border-radius: 50%;
-        // border: 5px solid $grey-white;
-    }
-    &__elem:hover:before {
-        // border: 5px solid $blue-career-circle;
     }
     &__elem-year {
         position: absolute;
@@ -62,7 +46,6 @@
     &__elem:hover &__elem-year:after {
         border: 5px solid $blue-career-circle;
         right: -25px;
-        
     }
     &__elem-title {
         font-weight: 500; /*medium*/
