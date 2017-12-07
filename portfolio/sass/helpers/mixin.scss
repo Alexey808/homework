@@ -1,0 +1,12 @@
+@mixin wrap() {
+    width: 940px;
+    height: 100%;
+    margin: 0 auto;
+}
+@mixin flex($justify-content, $align-items) {
+	// по умл @include flex(flex-start, stretch);
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+

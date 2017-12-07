@@ -1,0 +1,77 @@
+.contact {
+	&__button {
+        border-bottom: 1px dashed $blue;
+        font-size: 18px;
+        color: $blue;
+        font-weight: bold;
+        position: relative;
+    }
+    &__button:hover {
+        color: $red;
+        border-bottom: 1px dashed $red;
+        cursor: pointer;
+    }
+	&__list {
+        border: 1px solid $shadows;
+        border-radius: 10px;
+        background-color: $white;
+        position: absolute;
+        color: $grey;
+        list-style: none;
+        font-size: 18px;
+        font-weight: normal;
+        top: 36px;
+        left: -32px;
+        padding: 10px 15px;
+        line-height: 40px;
+    }
+	&__list_hidden {
+        visibility: hidden;
+    }
+	&__point {
+        position: relative;
+    }
+	&__point-link {
+        text-decoration: none;
+        color: $grey;
+        white-space: nowrap;
+    }
+    &__point-link:hover {
+        color: $blue;
+    }
+    &__button:hover &__list {
+        visibility: visible;
+    }
+    &__button:hover:after {
+        content: '';
+        position: absolute;
+        width: 190px;
+        height: 45px;
+        background-color: rgba(85, 85, 85, 0);
+        border-radius: 50px 10px;
+        left: -31px;
+        top: -2px;
+    }
+    &__list:before {
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 11px solid $white;
+        border-bottom-color: $shadows;
+        position: absolute;
+        bottom: 100%;
+        left: 90px;
+        content: '';
+    }
+    &__list:after {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 10px solid $shadows;
+        border-bottom-color: $grey-white;
+        position: absolute;
+        bottom: 100%;
+        left: 91px;
+        content: '';
+    }
+	&__point-ico {}
+	&__point-data {}
+}

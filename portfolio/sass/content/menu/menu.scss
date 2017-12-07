@@ -1,0 +1,30 @@
+.menu {
+    margin-right: 31px; /*25+6*/
+
+    &__point {
+        border-right: 6px solid $grey-white;
+        line-height: 44px;
+        text-align: right;
+        width: 100%;
+        padding-right: 25px;
+        font-size: 18px;
+    }
+    &__point_active {
+        border-right: 6px solid $blue !important;
+    }
+    &__point_active &__link {
+        color: $blue !important;
+        font-weight: bold;
+    }
+    &__link {
+        text-decoration: none;
+        color: $grey-black;
+    }
+    &__link:hover {
+        color: $blue;
+    }
+    &__link-tit {
+        padding-left: 5px;
+    }
+    &__link-ico {}
+}

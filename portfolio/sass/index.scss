@@ -1,14 +1,30 @@
-/* --- main -------------------------------------------- */
-@import "variables.scss";
-@import "fonts.scss";
-
-/* --- about ------------------------------------------- */
-@import "about/about.scss";
+/* --- helpers ----------------------------------------- */
+@import "helpers/variables.scss";
+@import "helpers/fonts.scss";
+@import "helpers/mixin.scss";
 
 
-/* --- career ------------------------------------------ */
-@import "career/career.scss";
+/* --- header ------------------------------------------ */
+@import "header/header.scss";
+@import "header/user/user.scss";
+@import "header/user/contact/contact.scss";
+
+/* --- content ----------------------------------------- */
+@import "content/content.scss";
+@import "content/menu/menu.scss";
 
 
-/* --- portfolio --------------------------------------- */
-@import "portfolio/portfolio.scss";
+/* --- about --- */
+@import "content/about/about.scss";
+
+/* --- career --- */
+@import "content/career/career.scss";
+@import "content/career/box/box.scss";
+
+/* --- portfolio --- */
+@import "content/portfolio/portfolio.scss";
+
+
+/* --- footer ------------------------------------------ */
+@import "footer/footer.scss";
+@import "footer/soc/soc.scss";

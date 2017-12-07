@@ -1,0 +1,29 @@
+.career {
+    font-family: 'Fira Sans', sans-serif;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__title {
+        width: 100%;
+        color: $grey-black;
+        font-size: 35px;
+        padding: 0px 0 20px 0;
+    }
+    &__picture {
+        width: 220px;
+        height: 220px;
+        border-radius: 9px;
+        background-color: $grey;
+        overflow: hidden;
+        background-position: center center;
+        margin-right: 20px;
+    }
+    &__picture-img {
+        margin: -5px 0 0 -92px;
+    }
+    &__box {
+        @include flex(flex-end, stretch);
+        width: calc(100% - 240px); /*100%-20+220*/
+    }
+}

@@ -1,0 +1,29 @@
+.user {
+    @include flex(space-between, stretch);
+    padding-top: 9px;
+
+    &__avatar {
+        float: left;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        background-color: $grey-white;
+        border: 1px solid $shadows;
+        overflow: hidden;
+        margin-right: 20px;
+    }
+	&__avatar-name {
+        width: 400px;
+    }
+	&__avatar-i {
+        max-width: 100%;
+    }
+	&__name {
+        white-space: nowrap;
+        font-size: 18px;
+        line-height: 60px;
+    }
+	&__contact {
+        @include flex(flex-start, center);
+    }
+}

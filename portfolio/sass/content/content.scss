@@ -1,0 +1,28 @@
+.content {
+    padding-top: 106px; /*81+25*/
+    color: #727272;
+    background-color: $grey-white;
+    min-height: calc(100% - 156px);
+
+    &__container {
+        @include wrap();
+        @include flex(space-between, stretch);
+    }
+    &__menu {
+        color: $grey-black;
+        width: 220px;
+    }
+    &__section {
+        width: 720px; /*340+380*/
+    }
+}
+
+
+
+
+
+/*about*/
+
+/*career*/
+
+/*portfolio*/
