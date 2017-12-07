@@ -16,8 +16,7 @@
 **hw-№2**
 
 - [hello](https://alexey808.github.io/homework/portfolio/hello.html)
-- [about](https://alexey808.github.io/homework/portfolio/index.html) *__(в разработке)__* <!-- *__(последнее)__* -->
-- [carerr](https://alexey808.github.io/homework/portfolio/carerr.html) *__(в разработке)__*
+- [about+career](https://alexey808.github.io/homework/portfolio/index.html)
 
 ---
 
