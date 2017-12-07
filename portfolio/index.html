@@ -27,6 +27,8 @@
     <script defer src="js/mCustomScrollbar.js"></script>
     <!-- /jQuery и custom-scrollbar -->
 
+    <!-- -->
+    <script defer src="js/menu.js"></script>
     <title>about</title>
 
 </head>
@@ -81,19 +83,19 @@
 
             <menu class="content__menu">
                 <div class="menu">
-                    <nav class="menu__point menu__point_active">
+                    <nav class="menu__point menu__point_active menu__point-about" onclick="menu('menu__point-about')">
                         <a href="#" class="menu__link">
                             <i class="points__link-ico fa fa-user-secret" aria-hidden="true"></i>
                             <span class="points__link-tit">Обо мне</span>
                         </a>
                     </nav>
-                    <nav class="menu__point">
+                    <nav class="menu__point menu__point-career" onclick="menu('menu__point-career')">
                         <a href="#" class="menu__link">
                             <i class="points__link-ico fa fa-rocket" aria-hidden="true"></i>
                             <span class="points__link-tit">Карьерный путь</span>
                         </a>
                     </nav>
-                    <nav class="menu__point">
+                    <nav class="menu__point menu__point-portfolio" onclick="menu('menu__point-portfolio')">
                         <a href="#" class="menu__link">
                             <i class="menu__link-ico fa fa-briefcase" aria-hidden="true"></i>
                             <span class="menu__link-tit">Портфолио</span>
@@ -106,7 +108,7 @@
             <div class="content__section">
 
                 <!-- about -->
-                <div class="about">
+                <section class="about">
                     <div class="about__photo"><img class="about__photo-i" src="img/photo.png"></div>
                     
                     <div class="about__description">
@@ -119,12 +121,12 @@
                     <div class="about__button">
                         <button class="about__button-dw">Скачать резюме</button>
                     </div>
-                </div>
+                </section>
                 <!-- /about -->
 
 
                  <!-- carrer -->
-                <section class="career">
+                <section class="career" style="display: none;">
                     <h1 class="career__title">Карьерный путь</h1>
                     <div class="career__picture">
                         <img class="career__picture-img" src="img/career.png">
