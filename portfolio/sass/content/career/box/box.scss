@@ -1,5 +1,4 @@
 .box {
-    // font-family: $fira-sans;
     font-size: 21px;
     position: relative;
     margin-left: 100px;
@@ -48,10 +47,19 @@
         right: -25px;
     }
     &__elem-title {
-        font-weight: 500; /*medium*/
+        font-weight: 400;
+        position: relative;
+    }
+    &__elem-title:before {
+        content: '\201c';
+    }
+    &__elem-title:after {
+        content: '\201e';
+        position: absolute;
+        top: -12px;
     }
     &__elem-text {
-        font-weight: 400; /*regular*/
+        font-weight: 300;
     }
     &__elem-line {
     }
@@ -62,6 +70,6 @@
         height: 76%;
         background-color: $shadows;
         top: 50px;
-        left: -29px;
+        left: -33px;
     }
 }
