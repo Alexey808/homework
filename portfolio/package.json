@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "gulp": "gulp",
-    "gulp-dev": "gulp default watch"
+    "gulp-dev": "gulp default watch",
+    "server": "gulp server watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.18.13",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-clean": "^0.3.2",
