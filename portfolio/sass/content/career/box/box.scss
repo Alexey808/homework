@@ -40,11 +40,12 @@
         color: $blue;
         font-weight: bold;
         font-size: 18px;
-        margin: 0px 0 0 -10px;
+        margin: -1px 0 0 -12px;
     }
     &__elem:hover &__elem-year:after {
         border: 5px solid $blue-career-circle;
         right: -25px;
+        top: 0px;
     }
     &__elem-title {
         font-weight: 400;
@@ -61,8 +62,7 @@
     &__elem-text {
         font-weight: 300;
     }
-    &__elem-line {
-    }
+    &__elem-line {}
     &:after {
         content: '';
         position: absolute;
