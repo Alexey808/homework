@@ -40,7 +40,7 @@ gulp.task('sass', function () {
         .pipe(gulpif(ENV != 'production', sourceMaps.init()))
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(autoprefixer({browsers: ['last 10 versions'], cascade: false}))
-        // .pipe(cleanCSS())
+        .pipe(cleanCSS())
         .pipe(concat('./src/style.css'))
         .pipe(gulpif(ENV != 'production', sourceMaps.write()))
         .pipe(gulp.dest('.'));
