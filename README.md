@@ -13,10 +13,10 @@
 
 - [intro](https://alexey808.github.io/homework/intro)
 
-**hw-№2**
+**hw-№2** (*Новый gulpfile. Правки в "Hello.html". About поправлен по PerfectPixel*)
 
-- [hello](https://alexey808.github.io/homework/portfolio/hello.html)
-- [about+career](https://alexey808.github.io/homework/portfolio/index.html)
+- [hello](https://alexey808.github.io/homework/portfolio/build/hello.html)
+- [about+career](https://alexey808.github.io/homework/portfolio/build/index.html)
 
 ---
 
@@ -43,7 +43,10 @@
 - [Тиблицы](https://drive.google.com/open?id=1S3UdTCsQO8EZKffI3jQ0qeyUvXj328Le)  
 - [Верстка](https://drive.google.com/open?id=1Lsy_qgNJd1qBQZ7terqceG4l0cO82LiY)
 - [Flexbox](https://drive.google.com/open?id=1JFL9VanAO-GwGbAnyPoF7BqaGv-EsqHa)
-- [SASS](https://drive.google.com/open?id=1bVpOPsdlryR_WDH2jZjpvQr3ngCM4sT1)  
+- [SASS](https://drive.google.com/open?id=1bVpOPsdlryR_WDH2jZjpvQr3ngCM4sT1) 
+- [Workflow](https://drive.google.com/open?id=1aMGFO9Acej7HhedfxzUHCIrCXnQ-eudm) 
+- [Адаптивная вёрстка](https://drive.google.com/open?id=1Kb_aClaAYI1j4Qbdv2FDCQKS5ic8305w)  
 
-### Матерьялы
-- [Макеты PSD](https://drive.google.com/open?id=1qcC76KttJ2Wy5zhBaV4Oabe_oFTcIFN8)  
+### Матерьялы (PSD макеты)
+- [Desktop](https://drive.google.com/open?id=18sC3bCSaDxvOVmWXHlDksW_Ke07gN6qn)  
+- [Mobile](https://drive.google.com/open?id=1q7AbbOqxxbAuwRMA_T5Po5L0e1jZ-APH)  
