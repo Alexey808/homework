@@ -68,6 +68,7 @@ body {
     }
 
     &__btn {
+        display: block;
         font-size: 14px;
         color: #ffffff;
         font-family: 'Fira Sans', sans-serif;
@@ -79,6 +80,7 @@ body {
         border: 2px solid #ffffff;
         line-height: 41px;
         margin: 0px auto 0px;
+        text-decoration: none;
     }
 
     &__btn:hover {
@@ -99,4 +101,5 @@ body {
     &__btn::-moz-selection {
         background: transparent;
     }
+
 }
