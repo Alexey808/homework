@@ -5,12 +5,12 @@
     &__avatar {
         float: left;
         border-radius: 50%;
-        width: 60px;
-        height: 60px;
+        width: 59px;
+        height: 59px;
         background-color: $grey-white;
-        border: 1px solid $shadows;
+        border: 2px solid $shadows;
         overflow: hidden;
-        margin-right: 20px;
+        margin: -2px 19px 0 -2px;
     }
 	&__avatar-name {
         width: 400px;
@@ -22,6 +22,10 @@
         white-space: nowrap;
         font-size: 18px;
         line-height: 60px;
+    }
+    &__name-a {
+        color: $grey-black;
+        text-decoration: none;
     }
 	&__contact {
         @include flex(flex-start, center);

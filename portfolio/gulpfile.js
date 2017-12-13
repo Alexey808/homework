@@ -11,61 +11,9 @@ var gulpif        = require('gulp-if');
 var clean         = require('gulp-clean');
 var browserSync   = require('browser-sync');//.create();
 
-// // Окружение
-// //const ENV = process.env.NODE_ENV || 'production';
-// var ENV = 'dev';
-
-// // Задача запускаемая по умолчанию
-// gulp.task('default', function() {
-//     var tasks = ['sass'];
-//     if (ENV != 'production') {
-//         tasks.push('watch');
-//     } else {
-//         gulp.src(['./src/*'], {read: false}).pipe(clean());
-//     }
-
-//     gulp.start(tasks);
-// });
-
-// // Задача для автозапуска нужных подзадач
-// gulp.task('watch', function () {
-//     // ENV = 'dev';
-//     gulp.watch([
-//       '*.html',
-//       'css/**/*.css',
-//       'sass/**/*.scss'
-//     ]).on('change', browserSync.reload);
-// });
-
-// // Запуск BrowserSync
-// gulp.task('server', function() {
-//     browserSync.init({
-//         server: {
-//             baseDir: "./"
-//         },
-//         port: 9000,
-//         open: false
-//     });
-// });
-
-// // Подзадача для запуска сборщика SCSS файлов
-// gulp.task('sass', function () {
-//     return gulp.src([
-//         './sass/index.scss'
-//     ])
-//         .pipe(gulpif(ENV != 'production', sourceMaps.init()))
-//         .pipe(sass.sync().on('error', sass.logError))
-//         .pipe(autoprefixer({browsers: ['last 10 versions'], cascade: false}))
-//         .pipe(cleanCSS())
-//         .pipe(concat('./src/style.css'))
-//         .pipe(gulpif(ENV != 'production', sourceMaps.write()))
-//         .pipe(gulp.dest('.'));
-// });
-
-//-----------------------------------------------------------------------------
 
 //Дефолтный таск ---------------------------------------------------+
-gulp.task('default', ['clean', 'build', 'server', 'watch']);
+gulp.task('default', ['build', 'server', 'watch']);
 
 
 // Сервер ----------------------------------------------------------+
@@ -73,44 +21,47 @@ var config = {
     server: {
         baseDir: "./build"
     },
-    tunnel: false,
     host: 'localhost',
     port: 9000,
-    logPrefix: "Frontend_Devil"
 };
 gulp.task('server', ()=> {
     browserSync(config);
 });
 
-
 // PATH ------------------------------------------------------------+
 var path = {
-    build: { //Тут мы укажем куда складывать готовые после сборки файлы
+    build: {
         html: 'build/',
         css: 'build/css/',
+        js: 'build/js/',
+        img: 'build/img/'
     },
-    src: { //Пути откуда брать исходники
+    src: {
         html: 'src/*.html', 
-        style: 'src/sass/**/*.scss',
+        style: 'src/sass/index.scss',
+        js: 'src/js/**/*.js',
+        img: 'src/img/**/*.*'
     },
-    watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
+    watch: {
         html: 'src/*.html',
         style: 'src/**/*.scss',
+        js: 'src/main.js',
+        img: 'src/img/*.*'
     },
     clean: './build/*'
 };
 
-
 // Сборка тасков build ---------------------------------------------+
 gulp.task('build', [
+    // 'clean:build',
     'html:build',
-    'style:build'
+    'style:build',
+    'js:build',
+    'image:build'
 ]);
 
 //Чистка -----------------------------------------------------------+
-gulp.task('clean', ()=> {
-    // clean.sync('build/*');
-   
+gulp.task('clean:build', ()=> {
     return gulp.src(path.clean, {read: false})
         .pipe(clean());
 });
@@ -120,38 +71,58 @@ gulp.task('watch', ()=> {
     gulp.watch([path.watch.html], function(event, cb) {
         gulp.start('html:build');
     });
-    gulp.watch([path.watch.style], {readDelay: 200}, function(event, cb) {
+    gulp.watch([path.watch.style], function(event, cb) {
         gulp.start('style:build');
+    });
+    gulp.watch([path.watch.html], function(event, cb) {
+        gulp.start('js:build');
+    });
+    gulp.watch([path.watch.style], function(event, cb) {
+        gulp.start('image:build');
     });
 });
 
 // Сборка html -----------------------------------------------------+
 gulp.task('html:build', ()=> {
-    gulp.src(path.src.html) //Выберем файлы по нужному пути
+    gulp.src(path.src.html)
         // .pipe(rigger()) //Прогоним через rigger
-        .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
-        // .pipe(reload({stream: true})); //И перезагрузим наш сервер для обновлений
-        browserSync.reload;
+        .pipe(gulp.dest(path.build.html)) 
+        .pipe(browserSync.reload({stream: true})); 
 });
 
 // Сборка css ------------------------------------------------------+
 gulp.task('style:build', ()=>{
     gulp.src(path.src.style)
-        .pipe(sass({outputStyle:'expanded'}).on('error',sass.logError))
+        .pipe(sourceMaps.init())
+        // .pipe(sass({outputStyle:'expanded'}).on('error',sass.logError))
+        .pipe(sass.sync().on('error', sass.logError))
         .pipe(autoprefixer({browsers: ['last 10 versions'], cascade: false}))
-        .pipe(cleanCSS())
-        .pipe(concat(path.build.css))
+        // .pipe(cleanCSS())
+        .pipe(concat('main.css'))
         .pipe(sourceMaps.write())
         .pipe(gulp.dest(path.build.css))
-        browserSync.reload;
+        .pipe(browserSync.reload({stream: true})); 
 
-        // .pipe(gulpif(ENV != 'production', sourceMaps.init()))
-        // .pipe(sass.sync().on('error', sass.logError))
-        // .pipe(autoprefixer({browsers: ['last 10 versions'], cascade: false}))
-        // .pipe(cleanCSS())
-        // .pipe(concat('./src/style.css'))
-        // .pipe(sourceMaps.write())
-        // .pipe(gulp.dest('.'));
 });
 
+// Сборка js -------------------------------------------------------+
+gulp.task('js:build', ()=> {
+    gulp.src(path.src.js) //Найдем наш main файл
+        //.pipe(uglify())
+        .pipe(concat('main.js'))
+        .pipe(gulp.dest(path.build.js))
+        .pipe(browserSync.reload({stream: true})); 
+});
 
+// Сборка изображений ----------------------------------------------+
+gulp.task('image:build', ()=> {
+    gulp.src(path.src.img)
+        // .pipe(imagemin({
+        //     progressive: true,
+        //     svgoPlugins: [{removeViewBox: false}],
+        //     //use: [pngquant()],
+        //     interlaced: true
+        // }))
+        .pipe(gulp.dest(path.build.img))
+        .pipe(browserSync.reload({stream: true})); 
+});

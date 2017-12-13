@@ -1,7 +1,7 @@
 .soc {
     @include flex(space-between, stretch);
     list-style: none;
-    width: 105px;
+    width: 106px;
 
     &__point {
         display: inline-block;
@@ -9,7 +9,7 @@
         overflow: hidden;
         width: 30px;
         height: 30px;
-        margin: 0 1px;
+        
     }
     &__link {
         display: block;

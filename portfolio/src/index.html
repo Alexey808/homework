@@ -8,7 +8,8 @@
     <meta content="telephone=no" name="format-detection">
     <link rel="icon" href="img/dude.png" type= "image/png">
 
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
 
     <!-- jQuery и custom-scrollbar -->
     <script defer src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -21,7 +22,7 @@
     <!-- /jQuery и custom-scrollbar -->
 
     <!-- Меню-->
-    <script async src="js/menu.js"></script>
+    <script async src="js/main.js"></script>
     <!-- /Меню-->
 
     <title>Portfolio</title>
@@ -37,7 +38,7 @@
                 <div class="user">
                     <div class="user__avatar-name">
                         <div class="user__avatar"><img class="user__avatar-i" src="img/avatar.png"></div>
-                        <div class="user__name">Анатолий Анатольев</div>
+                        <div class="user__name"><a href="hello.html" class="user__name-a">Анатолий Анатольев</a></div>
                     </div>
                     <div class="user__contact">
                         <div class="contact">
@@ -80,14 +81,14 @@
                 <div class="menu">
                     <nav class="menu__point menu__point_active menu__point-about" onclick="menu('menu__point-about')">
                         <a href="#" class="menu__link">
-                            <i class="points__link-ico fa fa-user-secret" aria-hidden="true"></i>
-                            <span class="points__link-tit">Обо мне</span>
+                            <i class="menu__link-ico fa fa-user-secret" aria-hidden="true"></i>
+                            <span class="menu__link-tit">Обо мне</span>
                         </a>
                     </nav>
                     <nav class="menu__point menu__point-career" onclick="menu('menu__point-career')">
                         <a href="#" class="menu__link">
-                            <i class="points__link-ico fa fa-rocket" aria-hidden="true"></i>
-                            <span class="points__link-tit">Карьерный путь</span>
+                            <i class="menu__link-ico fa fa-rocket" aria-hidden="true"></i>
+                            <span class="menu__link-tit">Карьерный путь</span>
                         </a>
                     </nav>
                     <nav class="menu__point menu__point-portfolio" onclick="menu('menu__point-portfolio')">
@@ -103,18 +104,21 @@
             <div class="content__section">
 
                 <!-- about -->
-                <section class="about">
+                <section class="about" style="display: flex;">
                     <div class="about__photo"><img class="about__photo-i" src="img/photo.png"></div>
                     
                     <div class="about__description">
                         <h1 class="about__title">Обо мне</h1>
                         <div class="about__text">
-                            Меня зовут Анатолий. Проживаю в городе Тольятти. В последнее время открыл для себя много интересного в JavaScript и всех сопутствующих тенденциях от Microsoft:ASP.NET 4, Knockout, SignalR, Upshot. Учусь писать тестируемый код на net. Делю логику на классы (стараюсь не забывать SOLID принципы) и тестировать юнит тестами. Хорошо пишу процедуры для MySQL. Чувствую в себе слабое владение client side и поэтому стараюсь восполнить данную нишу по мере возможностей. Из последних книг которые прочитал могу выделить: Professional ASP.NET MVC 3, JavaScript: The Good Parts, прочел много статей и туториалов. Знаком с “бандой четырех” и стараюсь использовать паттерны и практики где это необходимо и оправданно. Прочитал паттерны несколько раз но все равно есть непонимание некоторых моментов. Макконела также не обошел стороной. Иногда Читаю Фаулера выборочно: рефакторинг, PoEAA. Проблем с 5+ лет в IT было решено много разных.
+                            Меня зовут Анатолий. Проживаю в городе Тольятти. В последнее время открыл для себя много интересного в JavaScript и всех сопутствующих тенденциях от Microsoft:ASP.NET 4, Knockout, SignalR, Upshot. Учусь писать тестируемый код на net. Делю логику на классы(стараюсь не забывать SOLID принципы) и тестировать юнит тестами. Хорошо пишу процедуры для MySQL. Чувствую в себе слабое владение client side и поэтому стараюсь восполнить данную нишу по мере возможностей. Из последних книг которые прочитал могу выделить: Professional ASP.NET MVC 3, JavaScript: The Good Parts, прочел много статей и туториалов. Знаком с “бандой четырех” и стараюсь использовать паттерны и практики где это необходимо и оправданно. Прочитал паттерны несколько раз но все равно есть непонимание некоторых моментов. Макконела также не обошел стороной. Иногда Читаю Фаулера выборочно: рефакторинг, PoEAA. Проблем с 5+ лет в IT было решено много разных.
                         </div>
                     </div>
-
+                    <i class="about__button-ico" class="fa fa-download" aria-hidden="true"></i>
                     <div class="about__button">
-                        <button class="about__button-dw">Скачать резюме</button>
+                        <div class="about__button-dw">
+                            <i class="about__button-ico" class="fa fa-download" aria-hidden="true"></i>
+                            <span class="about__button-txt">Скачать резюме</span>
+                        </div>
                     </div>
                 </section>
                 <!-- /about -->
@@ -167,58 +171,91 @@
 
 
                 <!-- portfolio -->
-                <section class="portfolio">
+                <section class="portfolio" style="display: none;">
                     <div class="container_portfolio">
                         <h1 class="portfolio__title">Портфолио</h1>
                         <div class="portfolio__box">
                             <div class="box">
                                 <div class="box__item">
                                     <div class="item">
-                                        <div class="item__top"></div>
+                                        <div class="item__top">
+                                            <img src="img/deals_app.png" class="item__top-i">
+                                        </div>
                                         <div class="item__bottom">
-                                            <div class="item__bottom-tit">Deals App</div>
-                                            <div class="item__bottom-cnt"></div>
-                                            <div class="item__bottom-footer"></div>
+                                            <div class="item__title">Deals App</div>
+                                            <div class="item__content">Продажа одежды</div>
+                                            <div class="item__footer">
+                                                <p class="item__footer-line">
+                                                    <i class="item__footer-ico fa fa-mobile" aria-hidden="true"></i>
+                                                    <span class="item__footer-txt">Приложение</span>
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="box__item">
                                     <div class="item">
-                                        <div class="item__top"></div>
+                                        <div class="item__top">
+                                            <img src="img/dream_scapes.png" class="item__top-i">
+                                        </div>
                                         <div class="item__bottom">
-                                            <div class="item__bottom-tit"></div>
-                                            <div class="item__bottom-cnt"></div>
-                                            <div class="item__bottom-footer"></div>                              
+                                            <div class="item__title">Dream-scapes</div>
+                                            <div class="item__content">Лагуна Люфтганза</div>
+                                            <div class="item__footer">
+                                                <p class="item__footer-line">
+                                                    <i class="item__footer-ico fa fa-television" aria-hidden="true"></i>
+                                                    <span class="item__footer-txt">Лендинг</span>
+                                                </p>
+                                            </div>                              
                                         </div>
                                     </div>
                                 </div>
                                 <div class="box__item">
                                     <div class="item">
-                                        <div class="item__top"></div>
+                                        <div class="item__top">
+                                            <img src="img/creative_studio.png" class="item__top-i">
+                                        </div>
                                         <div class="item__bottom">
-                                            <div class="item__bottom-tit"></div>
-                                            <div class="item__bottom-cnt"></div>
-                                            <div class="item__bottom-footer"></div>       
+                                            <div class="item__title">Creative studio</div>
+                                            <div class="item__content">Танцевальная студия</div>
+                                            <div class="item__footer">
+                                                <p class="item__footer-line">
+                                                    <i class="item__footer-ico fa fa-mobile" aria-hidden="true"></i>
+                                                    <span class="item__footer-txt">Корпоративный сайт</span>
+                                                </p>
+                                            </div>       
                                         </div>
                                     </div>
                                 </div>
                                 <div class="box__item">
                                     <div class="item">
-                                        <div class="item__top"></div>
+                                        <div class="item__top">
+                                            <img src="img/studio_frog.png" class="item__top-i">
+                                        </div>
                                         <div class="item__bottom">
-                                            <div class="item__bottom-tit"></div>
-                                            <div class="item__bottom-cnt"></div>
-                                            <div class="item__bottom-footer"></div>     
+                                            <div class="item__title">Studio Frog</div>
+                                            <div class="item__content">Мебельный магазин</div>
+                                            <div class="item__footer">
+                                                <i class="item__footer-ico fa fa-television" aria-hidden="true"></i>
+                                                <span class="item__footer-txt">Лендинг</span>
+                                            </div>     
                                         </div>
                                     </div>
                                 </div>
                                 <div class="box__item">
                                     <div class="item">
-                                        <div class="item__top"></div>
+                                        <div class="item__top">
+                                            <img src="img/carbonara.png" class="item__top-i">
+                                        </div>
                                         <div class="item__bottom">
-                                            <div class="item__bottom-tit"></div>
-                                            <div class="item__bottom-cnt"></div>
-                                            <div class="item__bottom-footer"></div>                 
+                                            <div class="item__title">Carbonara</div>
+                                            <div class="item__content">Итальянский ресторан</div>
+                                            <div class="item__footer">
+                                                <p class="item__footer-line">
+                                                    <i class="item__footer-ico fa fa-television" aria-hidden="true"></i>
+                                                    <span class="item__footer-txt">Лендинг</span>
+                                                </p>
+                                            </div>                 
                                         </div>
                                     </div>
                                 </div>
@@ -233,6 +270,7 @@
         </div>
     </main>
     <!-- /content -->
+
 
 
     <!-- footer -->
