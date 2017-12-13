@@ -1,0 +1,102 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+}
+
+body {
+    background-color: #eee;
+}
+
+.wrap {
+    width: 300px;
+    margin: 0px auto;
+}
+
+.photo {
+    max-width: 100%;
+    margin-top: -70px;
+    border-radius: 70px;
+    height: 140px;
+    border: 1px solid #d6d6d6;
+
+
+}
+    .photo::before{
+        content: '';
+        height: 60px;
+        display: block;
+    }
+
+.line {
+    font-size: 21px;
+    color: #414141;
+    font-weight: bold;
+    text-align: center;
+}
+
+.item {
+    width: 300px;
+    height: 235px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+    margin: auto;
+
+    &__user {
+        text-align: center;
+    }
+
+    &__name {
+        text-align: center;
+        min-height: 72px; /* -5px  */
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    &__name-first {
+        margin-top: 5px;
+    }
+
+    &__footer {
+        background-color: #33c1e3;
+        border-radius: 0 0 10px 10px;
+        height: 61px;
+        padding: 21px 0px 0px 0px;
+    }
+
+    &__btn {
+        font-size: 14px;
+        color: #ffffff;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        width: 138px;
+        height: 40px;
+        border-radius: 20px;
+        border: 2px solid #ffffff;
+        line-height: 41px;
+        margin: 0px auto 0px;
+    }
+
+    &__btn:hover {
+        background-color: #ffffff;
+        color: #33c1e3;
+        cursor: pointer;
+    }
+
+    &__btn:active {
+        border: 1px solid #fff;
+        color: #33c1e3;
+    }
+
+    &__btn::selection {
+        background: transparent;
+    }
+
+    &__btn::-moz-selection {
+        background: transparent;
+    }
+}

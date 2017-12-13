@@ -1,8 +1,8 @@
 .content {
-    padding-top: 106px; /*81+25*/
+    padding-top: 104px; /*81+25*/
     color: #727272;
     background-color: $grey-white;
-    min-height: calc(100% - 156px);
+    min-height: calc(100% - 154px);
 
     &__container {
         @include wrap();

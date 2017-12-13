@@ -1,3 +1,16 @@
+@import "hello/hello.scss";
+
+// @media screen and (min-width: 521px) {
+// 	backgound-color: green;
+// }
+
+@media screen and (max-width: 520px) {
+	/* Smapthone (мобильный телефон) */
+	@import "hello/m-hello.scss";
+
+}
+
+
 /* --- helpers ----------------------------------------- */
 @import "helpers/variables.scss";
 @import "helpers/fonts.scss";

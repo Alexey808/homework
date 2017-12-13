@@ -1,0 +1,18 @@
+.header {
+    position: fixed;
+    z-index: 2;
+    height: 79px;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid #dddddd;
+    color: #414141;
+
+
+    &__container {
+        @include wrap();
+        padding-top: 2px;
+    }
+	&__user {}
+
+}
