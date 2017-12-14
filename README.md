@@ -13,7 +13,7 @@
 
 - [intro](https://alexey808.github.io/homework/intro)
 
-**hw-№2** (*Новый gulpfile. Правки в "Hello.html". About поправлен по PerfectPixel*)
+**hw-№2** (*hello+perfectpixel+mobile | about+perfectpixel+mobile | career*)
 
 - [hello](https://alexey808.github.io/homework/portfolio/build/hello.html)
 - [about+career](https://alexey808.github.io/homework/portfolio/build/index.html)
