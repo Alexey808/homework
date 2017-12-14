@@ -3,7 +3,6 @@
     padding-top: 9px;
 
     &__avatar {
-        float: left;
         border-radius: 50%;
         width: 59px;
         height: 59px;
@@ -14,6 +13,7 @@
     }
 	&__avatar-name {
         width: 400px;
+        display: flex;
     }
 	&__avatar-i {
         max-width: 100%;
@@ -22,6 +22,9 @@
         white-space: nowrap;
         font-size: 18px;
         line-height: 60px;
+    }
+    &__name-br {
+        display: none;
     }
     &__name-a {
         color: $grey-black;

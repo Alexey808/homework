@@ -1,13 +1,13 @@
 .header {
+    
     position: fixed;
     z-index: 2;
     height: 79px;
     width: 100%;
-    background-color: #ffffff;
+    background-color: $white;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
-    border-bottom: 1px solid #dddddd;
-    color: #414141;
-
+    border-bottom: 1px solid $shadows;
+    color: $grey-black;
 
     &__container {
         @include wrap();

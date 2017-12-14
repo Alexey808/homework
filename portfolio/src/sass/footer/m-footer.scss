@@ -1,0 +1,21 @@
+.footer {
+
+	height: 115px;
+
+    &__container {
+        width: 100%;
+        display: inline-block;
+    }
+    &__ownership {
+		text-align: center;
+	    font-size: 0.92rem;
+	    width: 60%;
+	    line-height: 21px;
+	    margin: 14px auto 10px;
+	    letter-spacing: 0px;
+    }
+    &__ownership::before {}
+    &__soc {}
+    
+}
+

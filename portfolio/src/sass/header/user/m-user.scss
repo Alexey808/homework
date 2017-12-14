@@ -1,0 +1,30 @@
+.user {
+    height: 100%;
+    padding: 0px;
+    
+    &__avatar {
+      margin-right: 18px;
+    }
+	&__avatar-name {
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        width: auto;
+    }
+	&__avatar-i {}
+	&__name {
+        white-space: normal;
+        line-height: 1.5;
+        font-size: 0.88rem;
+        display: flex;
+        margin-top: -5px;
+    }
+    &__name-a {}
+	&__contact {
+        width: 25%;
+    }
+    &__name-br {
+        display: block;
+    }
+
+}

@@ -1,11 +1,6 @@
 @import "hello/hello.scss";
 
-// @media screen and (min-width: 521px) {
-// 	backgound-color: green;
-// }
-
 @media screen and (max-width: 520px) {
-	/* Smapthone (мобильный телефон) */
 	@import "hello/m-hello.scss";
 
 }
@@ -17,18 +12,32 @@
 @import "helpers/mixin.scss";
 @import "helpers/main.scss";
 
+
 /* --- header ------------------------------------------ */
+
 @import "header/header.scss";
 @import "header/user/user.scss";
 @import "header/user/contact/contact.scss";
 
+@media screen and (max-width: 520px) {
+	@import "header/m-header.scss";
+	@import "header/user/m-user.scss";
+	@import "header/user/contact/m-contact.scss";
+}
 /* --- content ----------------------------------------- */
 @import "content/content.scss";
 @import "content/menu/menu.scss";
 
-
+@media screen and (max-width: 520px) {
+	@import "content/m-content.scss";
+	@import "content/menu/m-menu.scss";
+}
 /* --- about --- */
 @import "content/about/about.scss";
+
+@media screen and (max-width: 520px) {
+	@import "content/about/m-about.scss";
+}
 
 /* --- career --- */
 @import "content/career/career.scss";
@@ -41,3 +50,8 @@
 /* --- footer ------------------------------------------ */
 @import "footer/footer.scss";
 @import "footer/soc/soc.scss";
+
+@media screen and (max-width: 520px) {
+	@import "footer/m-footer.scss";
+	@import "footer/soc/m-soc.scss";
+}

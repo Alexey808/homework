@@ -11,7 +11,7 @@
         font-size: 18px;
     }
     &__point_active {
-        border-right: 6px solid $blue !important;
+        border-right: 6px solid $blue;
     }
     &__point_active &__link {
         color: $blue !important;

@@ -1,0 +1,49 @@
+.contact {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__button-ico {
+        display: block;
+        font-size: 2.5rem;
+        margin-left: 26px;
+    }
+    &__button-name {
+        display: none;
+    }
+	&__button {
+        border-bottom: none;
+    }
+    &__button:hover {
+        border-bottom: none;
+    }
+	&__list {
+        top: 58px;
+        left: -130px;
+    }
+	&__list_hidden {}
+	&__point {}
+	&__point-link {}
+    &__point-link:hover {}
+    &__button:hover &__list {}
+    &__button:hover:after {
+        display: none;
+    }
+    &__list:before {
+        border-left: 10px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 10px solid $white;
+        left: 152px;
+        z-index: 2;
+    }
+    &__list:after {
+        border-left: 14px solid transparent;
+        border-right: 0px solid transparent;
+        border-bottom: 16px solid $shadows;
+        left: 150px;
+    }
+	&__point-ico {}
+	&__point-data {}
+}
