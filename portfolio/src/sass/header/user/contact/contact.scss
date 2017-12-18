@@ -5,7 +5,7 @@
     &__button-name {
         display: block;
     }
-	&__button {
+    &__button {
         border-bottom: 1px dashed $blue;
         font-size: 18px;
         color: $blue;
@@ -17,7 +17,7 @@
         border-bottom: 1px dashed $red;
         cursor: pointer;
     }
-	&__list {
+    &__list {
         border: 1px solid $shadows;
         border-radius: 10px;
         background-color: $white;
@@ -27,26 +27,24 @@
         font-size: 18px;
         font-weight: normal;
         top: 36px;
-        left: -32px;
+        left: -64px;
         padding: 10px 15px;
         line-height: 40px;
+        z-index: 3;
     }
-	&__list_hidden {
+    &__list_hidden {
         visibility: hidden;
     }
-	&__point {
+    &__point {
         position: relative;
     }
-	&__point-link {
+    &__point-link {
         text-decoration: none;
         color: $grey;
         white-space: nowrap;
     }
     &__point-link:hover {
         color: $blue;
-    }
-    &__button:hover &__list {
-        visibility: visible;
     }
     &__button:hover:after {
         content: '';
@@ -58,25 +56,40 @@
         top: -2px;
     }
     &__list:before {
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
+        content: '';
+        border-left: 16px solid transparent;
+        border-right: 4px solid transparent;
         border-bottom: 11px solid $white;
         border-bottom-color: $shadows;
         position: absolute;
         bottom: 100%;
-        left: 90px;
-        content: '';
+        left: 117px;
     }
     &__list:after {
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-bottom: 10px solid $shadows;
+        content: '';
+        border-left: 13px solid transparent;
+        border-right: 3px solid transparent;
+        border-bottom: 9px solid $shadows;
         border-bottom-color: $grey-white;
         position: absolute;
         bottom: 100%;
-        left: 91px;
-        content: '';
+        left: 119px;
     }
-	&__point-ico {}
-	&__point-data {}
+    &__point-ico {}
+    &__point-data {}
+}
+
+
+
+/* Анимация */
+.contact__button:hover > .contact__list, {
+    animation: shows .3s ease-out forwards;
+    visibility: visible;
+}
+@keyframes shows {
+    0% { 
+        opacity: 0;
+        transform: translate(10px, -10px);
+    }
+    100%{ opacity: 1; }
 }

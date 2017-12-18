@@ -1,3 +1,11 @@
+/* --- helpers ----------------------------------------- */
+@import "helpers/variables.scss";
+@import "helpers/fonts.scss";
+@import "helpers/mixin.scss";
+@import "helpers/main.scss";
+
+
+/* --- hello ------------------------------------------- */
 @import "hello/hello.scss";
 
 @media screen and (max-width: 520px) {
@@ -6,11 +14,7 @@
 }
 
 
-/* --- helpers ----------------------------------------- */
-@import "helpers/variables.scss";
-@import "helpers/fonts.scss";
-@import "helpers/mixin.scss";
-@import "helpers/main.scss";
+
 
 
 /* --- header ------------------------------------------ */
