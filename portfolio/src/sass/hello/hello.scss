@@ -96,12 +96,12 @@ body {
         transform: scale(1);
     }
 
-    // &__btn::selection {
-    //     background: transparent;
-    // }
+    &__btn::selection {
+        background: transparent;
+    }
 
-    // &__btn::-moz-selection {
-    //     background: transparent;
-    // }
+    &__btn::-moz-selection {
+        background: transparent;
+    }
 
 }

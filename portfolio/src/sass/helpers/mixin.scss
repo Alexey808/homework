@@ -4,9 +4,136 @@
     margin: 0 auto;
 }
 @mixin flex($justify-content, $align-items) {
-	// по умл @include flex(flex-start, stretch);
+    // по умл @include flex(flex-start, stretch);
     display: flex;
     align-items: $align-items;
     justify-content: $justify-content;
 }
+
+
+
+
+/* --- АНИМАЦИЯ ---------------------------------------- */
+@mixin an-bounceIn($duration) {
+    @keyframes bounceIn {
+        from, 20%, 40%, 60%, 80%, to {
+            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        }
+        0% {
+            opacity: 0;
+            transform: scale3d(.3, .3, .3);
+        }
+        20% {
+            transform: scale3d(1.1, 1.1, 1.1);
+        }
+        40% {
+            transform: scale3d(.9, .9, .9);
+        }
+        60% {
+            opacity: 1;
+            transform: scale3d(1.03, 1.03, 1.03);
+        }
+        80% {
+            transform: scale3d(.97, .97, .97);
+        }
+        to {
+            opacity: 1;
+            transform: scale3d(1, 1, 1);
+        }
+    }
+    animation-duration: $duration;
+    animation-name: bounceIn;
+}
+
+/* --- flipInX */
+@mixin an-flipInX($duration) {
+	@keyframes flipInX {
+	    from {
+	        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+	        animation-timing-function: ease-in;
+	        opacity: 0;
+	    }
+	    40% {
+	        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+	        animation-timing-function: ease-in;
+	    }
+	    60% {
+	        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+	        opacity: 1;
+	    }
+	    80% {
+	        transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+	    }
+	    to {
+	        transform: perspective(400px);
+	    }
+	}
+
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    animation-name: flipInX;
+    animation-duration: $duration;
+}
+
+/* --- lightSpeedIn */
+@mixin an-lightSpeedIn($duration) {
+	@keyframes lightSpeedIn {
+	  	from {
+	    	transform: translate3d(100%, 0, 0) skewX(-30deg);
+	    	opacity: 0;
+	  	}
+	  	60% {
+	    	transform: skewX(20deg);
+	    	opacity: 1;
+	  	}
+	  	80% {
+	    	transform: skewX(-5deg);
+	    	opacity: 1;
+	  	}
+	  	to {
+	    	transform: none;
+	    	opacity: 1;
+	  	}
+	}
+	animation-name: lightSpeedIn;
+	animation-timing-function: ease-out;
+	animation-duration: $duration;
+}
+
+/* --- rotateInUpRight */
+@mixin an-rotateInUpRight($duration) {
+	@keyframes rotateInUpRight {
+	  	from {
+	    	transform-origin: right bottom;
+	    	transform: rotate3d(0, 0, 1, -10deg);
+	    	opacity: 0;
+	  	}
+
+	  	to {
+	    	transform-origin: right bottom;
+	    	transform: none;
+	    	opacity: 1;
+	  	}
+	}
+	animation-duration: $duration;
+  	animation-name: rotateInUpRight;
+}
+
+/* --- rotateInUpRight */
+@mixin an-zoomIn($duration) {
+	@keyframes zoomIn {
+	  	from {
+	    	opacity: 0;
+	    	transform: scale3d(.3, .3, .3);
+	  	}
+	  	50% {
+	    	opacity: 1;
+	  	}
+	}
+	animation-name: zoomIn;
+	animation-duration: $duration;
+}
+
+
+
 

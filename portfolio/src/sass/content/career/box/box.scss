@@ -41,7 +41,6 @@
     }
     &__elem:hover &__elem-year {
         color: $blue;
-        font-weight: bold;
         font-size: 18px;
         margin: -1px 0 0 -12px;
     }
@@ -72,13 +71,26 @@
     &__elem-line {
         margin-bottom: 4px;
     }
-    // &:after {
-    //     content: '';
-    //     position: absolute;
-    //     width: 1px;
-    //     height: 76%;
-    //     background-color: $shadows;
-    //     top: 50px;
-    //     left: -33px;
-    // }
+
+    /* --- Анимация --- */
+
+    &__elem { 
+        @include an-flipInX(1s); 
+        z-index: 1; 
+    }
+    &__elem:hover { 
+        animation: box__elem .4s forwards; 
+        z-index: 1; 
+    }
+    @keyframes box__elem {
+        from { 
+            background-color: $white;
+            color: $grey-black;
+        }
+        to { 
+            background-color: $blue; 
+            color: $white;
+        }
+    }
+
 }

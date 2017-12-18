@@ -37,4 +37,10 @@
         top: 117px;
         left: 319px;
     }
+
+    /* --- Анимация --- */
+    &__title { @include an-lightSpeedIn(1s); }
+    &__picture { @include an-zoomIn(1s); }
+
+
 }

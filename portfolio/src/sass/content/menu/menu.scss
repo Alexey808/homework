@@ -35,45 +35,16 @@
     }
 
     
-    /* Анимация */
+    /* --- Анимация ------------------------------------ */
+
+    /*Прыгающие элементы меню при клике*/
     &__point_active > &__link {
         display:block;
-        animation-duration: .75s;
-        animation-name: bounceIn;
-    }
-    @keyframes bounceIn {
-        from, 20%, 40%, 60%, 80%, to {
-            animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-        }
-        0% {
-            opacity: 0;
-            transform: scale3d(.3, .3, .3);
-        }
-        20% {
-            transform: scale3d(1.1, 1.1, 1.1);
-        }
-        40% {
-            transform: scale3d(.9, .9, .9);
-        }
-        60% {
-            opacity: 1;
-            transform: scale3d(1.03, 1.03, 1.03);
-        }
-        80% {
-            transform: scale3d(.97, .97, .97);
-        }
-        to {
-            opacity: 1;
-            transform: scale3d(1, 1, 1);
-        }
+        @include an-bounceIn(1s)
     }
 
-    &__point { opacity: 0; }
-    &__point-about { animation: anim 1s ease 0s forwards; }
-    &__point-career { animation: anim 1s ease .2s forwards; }
-    &__point-portfolio { animation: anim 1s ease .4s forwards; }
-
-    @keyframes anim {
+    /*Выезжание элементов меню*/
+    @keyframes menu__point {
       from {
             opacity: 0;
             transform: translate(-100%, 0);
@@ -83,6 +54,10 @@
             transform: translate(0px, 0);
         }
     }
+    &__point { opacity: 0; }
+    &__point-about { animation: menu__point 1s ease 0s forwards; }
+    &__point-career { animation: menu__point 1s ease .2s forwards; }
+    &__point-portfolio { animation: menu__point 1s ease .4s forwards; }    
 }
 
 
