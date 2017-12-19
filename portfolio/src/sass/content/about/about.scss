@@ -2,7 +2,7 @@
     @include flex(flex-end, stretch);
     flex-wrap: wrap;
     align-content: flex-start;
-
+    
     &__photo {
         width: 220px; /*340px с полями*/
         height: 220px;
@@ -65,7 +65,7 @@
     /* --- Анимация --- */
     &__photo { @include an-zoomIn(1s); }
     &__title { @include an-lightSpeedIn(1s); }
-    &__text { @include an-rotateInUpRight(1s); }
+    &__text { @include an-rotateInUpLeft(.8s); }
     &__button { @include an-flipInX(2s); }
 
 }

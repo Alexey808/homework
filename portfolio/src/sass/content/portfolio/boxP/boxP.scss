@@ -1,0 +1,19 @@
+.boxP {
+
+    @include flex(flex-start, stretch);
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 0 0 21px;
+    padding: 0px;
+    font-size: 21px;
+    position: relative;
+
+    &__item {
+        margin: 0 20px 21px 0;
+    }
+
+    /* --- Анимация --- */
+    &__title { @include an-lightSpeedIn(1s); }
+    &__item { @include an-jackInTheBox(1.5s); }
+    
+}

@@ -1,4 +1,4 @@
-.box {
+.boxC {
     font-size: 21px;
     position: relative;
     margin-left: 100px;
@@ -79,10 +79,10 @@
         z-index: 1; 
     }
     &__elem:hover { 
-        animation: box__elem .4s forwards; 
+        animation: boxC__elem .4s forwards; 
         z-index: 1; 
     }
-    @keyframes box__elem {
+    @keyframes boxC__elem {
         from { 
             background-color: $white;
             color: $grey-black;

@@ -1,16 +1,33 @@
+/* --- Цветовые переменные */
+
+/*old*/
 $grey: #727272;
 $grey-black: #414141;
 $grey-white: #f6f6f6;
 $blue: #33c1e3;
 $red: #e85f61;
 $white: #ffffff;
-
 $blue-soc: #5d99c3;
 $grey-soc: #989898;
-
 $blue-career-circle: #94dff2;
 $shadows: #dddddd;
 
+/*colors list*/
+$color-1: #727272; /*$grey*/
+$color-2: #414141; /*$grey-black*/
+$color-3: #f6f6f6; /*$grey-white*/
+$color-4: #33c1e3; /*$blue*/
+$color-5: #e85f61; /*$red*/
+$color-6: #5d99c3; /*blue-soc*/
+$color-7: #989898; /*grey-soc*/
+$color-8: #94dff2; /*blue-career-circle*/
 
+/*is used only in...*/
+$color-9: #aeaeae; /*portfolio*/
 
+/*shaped colors*/
+$white: #ffffff;
+$shadows: #dddddd;
+
+/* --- Переменные по у.т. для миксинов анимаций */
 $duration: 1s;

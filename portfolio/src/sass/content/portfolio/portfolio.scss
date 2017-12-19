@@ -1,0 +1,21 @@
+.portfolio {
+
+    @include flex(flex-start, stretch);
+    flex-wrap: wrap;
+
+    &__title {
+        width: 100%;
+        color: $grey-black;
+        font-size: 35px;
+        font-weight: 600;
+        margin: 0 19px 22px;
+    }
+    
+    &__boxP {}
+
+    /* --- Анимация --- */
+    &__title { @include an-lightSpeedIn(1s); }
+
+}
+
+

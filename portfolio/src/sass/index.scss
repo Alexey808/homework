@@ -4,18 +4,12 @@
 @import "helpers/mixin.scss";
 @import "helpers/main.scss";
 
-
 /* --- hello ------------------------------------------- */
 @import "hello/hello.scss";
 
 @media screen and (max-width: 520px) {
 	@import "hello/m-hello.scss";
-
 }
-
-
-
-
 
 /* --- header ------------------------------------------ */
 
@@ -45,11 +39,12 @@
 
 /* --- career --- */
 @import "content/career/career.scss";
-@import "content/career/box/box.scss";
+@import "content/career/boxC/boxC.scss";
 
 /* --- portfolio --- */
 @import "content/portfolio/portfolio.scss";
-
+@import "content/portfolio/boxP/boxP.scss";
+@import "content/portfolio/boxP/item/item.scss";
 
 /* --- footer ------------------------------------------ */
 @import "footer/footer.scss";

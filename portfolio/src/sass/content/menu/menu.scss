@@ -1,6 +1,6 @@
 .menu {
     margin-right: 31px; /*25+6*/
-    margin-top: 1px;
+    margin-top: 3px;
 
     &__point {
         border-right: 6px solid $grey-white;
@@ -45,7 +45,7 @@
 
     /*Выезжание элементов меню*/
     @keyframes menu__point {
-      from {
+        from {
             opacity: 0;
             transform: translate(-100%, 0);
         }

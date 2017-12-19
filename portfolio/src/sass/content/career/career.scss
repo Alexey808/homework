@@ -24,11 +24,11 @@
     &__picture-img {
         margin: -5px 0 0 -92px;
     }
-    &__box {
+    &__boxC {
         @include flex(flex-end, stretch);
         width: calc(100% - 240px); /*100%-20+220*/
     }
-    &__box:after {
+    &__boxC:after {
         content: '';
         position: absolute;
         width: 1px;
@@ -41,6 +41,5 @@
     /* --- Анимация --- */
     &__title { @include an-lightSpeedIn(1s); }
     &__picture { @include an-zoomIn(1s); }
-
-
+    &__boxC:after { @include an-slideInDown(1s); }
 }
