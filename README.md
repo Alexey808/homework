@@ -35,6 +35,7 @@
 - [Иконки Font Awesome](http://fontawesome.io/icons/)
 - [html валидатор](https://jigsaw.w3.org/css-validator/)  
 - [css валидатор](https://jigsaw.w3.org/css-validator/)  
+- [css анимация, библиотека](https://daneden.github.io/animate.css/)  
 
 ### Презентации
 - [CSS](https://drive.google.com/open?id=1sBnc-3fVCdUGBJ2YHcpfT3JJlKqo-9bS)  
