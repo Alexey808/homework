@@ -1,37 +1,42 @@
 .item {
-
     border-radius: 10px;
     width: 220px;
     position: relative;
     padding-bottom: 33px; /*высота футора элемента*/
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-
-    &:hover {
-        cursor: pointer;
-    }
+    margin: 0 20px 21px 0;
+    font-weight: 300;
+    &:hover { cursor: pointer; }
+    
     &__top {
         overflow: hidden;
         border-radius: 10px 10px 0 0;
         width: 220px;
         height: 172px;
     }
+
     &__top-i {
         max-width: 100%;
     }
+
     &__bottom {
         background-color: $white;
         padding: 15px 18px;
     }
+
     &__title {
         color: $color-4;
         padding-bottom: 2px;
     }
+
     &:hover &__title {
         color: $color-5;
     }
+
     &__content {
         font-size: 14px;
     }
+
     &__footer {
         position: absolute;
         background-color: $white;
@@ -43,26 +48,33 @@
         color: $color-9;
         border-radius: 0 0 10px 10px;
     }
+
     &__footer-line {
         padding: 0 20px 15px;
     }
+
     &__footer-ico {
         font-size: 18px;
     }
+
     &__footer-line .fa-mobile {
         margin-right: 2px;
     }
+
     &__footer-txt {}
 
     /* --- Анимация --- */
     &__title { @include an-lightSpeedIn(1s); }
+
     &:hover {
         transition: transform .3s;
         transform: scale(1.05);
     }
+
     &:active {
-        transition: transform .3s;
         transform: scale(0.95);
     }
     
+    @include an-jackInTheBox(1.5s);
 }
+

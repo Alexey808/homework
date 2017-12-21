@@ -1,35 +1,43 @@
 .menu {
+
     margin-right: 31px; /*25+6*/
     margin-top: 3px;
 
     &__point {
-        border-right: 6px solid $grey-white;
+        border-right: 6px solid $color-3;
         line-height: 44px;
         text-align: right;
         width: 100%;
         padding-right: 25px;
         font-size: 18px;
     }
+
     &__point_active {
-        border-right: 6px solid $blue;
+        border-right: 6px solid $color-4;
     }
+
     &__point_active &__link {
-        color: $blue !important;
+        color: $color-4 !important;
         font-weight: bold;
     }
+
     &__link {
         text-decoration: none;
-        color: $grey-black;
+        color: $color-2;
     }
+
     &__link:hover {
-        color: $blue;
+        color: $color-4;
     }
+
     &__link-tit {
         padding-left: 5px;
     }
+
     &__link-ico {
         margin-right: -1px;
     }
+
     &__point-portfolio &__link-tit {
         margin-right: -1px;
     }
@@ -54,6 +62,7 @@
             transform: translate(0px, 0);
         }
     }
+    
     &__point { opacity: 0; }
     &__point-about { animation: menu__point 1s ease 0s forwards; }
     &__point-career { animation: menu__point 1s ease .2s forwards; }

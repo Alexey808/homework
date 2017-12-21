@@ -4,6 +4,8 @@
     margin-left: 100px;
 
     &__elem {
+        @include flex(flex-start, center);
+        flex-wrap: wrap;
         width: 340px;
         border-radius: 10px;
         box-shadow: 0 1px 3px rgba(0,0,0,0.2);
@@ -11,65 +13,98 @@
         padding: 15px 20px 11px 20px;
         margin-bottom: 20px;
         background-color: $white;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+        word-wrap: break-word;
+   
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: calc(100% + 20px);
+            background-color: $shadows;
+            left: -21px;
+        }
+
+        &:first-child:after {
+            top: 50%;
+            height: calc(50% + 15px);
+        }
+
+        &:last-child:after {
+            top: -10px;
+            height: calc(50% + 15px);
+        }
+
+        &:hover {
+            background-color: $color-4;
+            cursor: pointer;
+            color: $white;
+        }
     }
-    &__elem:hover {
-        background-color: $blue;
-        cursor: pointer;
-        color: $white;
-    }
+
     &__elem-year {
         position: absolute;
         left: -62px;
         top: 43%;
         font-size: 14px;
         font-weight: 300; /*light*/
+    
+        &:after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: $color-4;
+            top: -6%;
+            right: -25px;
+            z-index: 1;
+            border-radius: 50%;
+            border: 5px solid $color-3;
+        }
     }
-    &__elem-year:after {
-        content: '';
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        background-color: $blue;
-        top: -6%;
-        right: -25px;
-        z-index: 1;
-        border-radius: 50%;
-        border: 5px solid $grey-white;
-    }
+
+
     &__elem:hover &__elem-year {
-        color: $blue;
+        color: $color-4;
         font-size: 18px;
         margin: -1px 0 0 -12px;
     }
+
     &__elem:hover &__elem-year:after {
-        border: 5px solid $blue-career-circle;
-        right: -26px;
+        border: 5px solid $color-8;
+        right: -29px;
         top: 0px;
     }
+    
     &__elem-title {
         font-weight: 400;
         position: relative;
         display: flex;
         width: 100%;
-        margin-bottom: 4px;
+        padding-bottom: 4px;
+  
+        &:before {
+            content: '\201c';
+        }
+
+        &:after {
+            content: '\201e';
+            position: absolute;
+            top: -13px;
+        }
     }
-    &__elem-title:before {
-        content: '\201c';
-    }
-    &__elem-title:after {
-        content: '\201e';
-        position: absolute;
-        top: -13px;
-    }
+
     &__elem-text {
         font-weight: 300;
         font-size: 18px;
+        width: 100%;
+        hyphens: auto;
     }
+
     &__elem-line {
-        margin-bottom: 4px;
+        padding-bottom: 4px;
+        width: 100%;
+        word-wrap: break-word;
     }
 
     /* --- Анимация --- */
@@ -78,18 +113,14 @@
         @include an-flipInX(1s); 
         z-index: 1; 
     }
-    &__elem:hover { 
-        animation: boxC__elem .4s forwards; 
-        z-index: 1; 
-    }
+    &__elem:after { @include an-slideInDown(1.5s); }
+   
     @keyframes boxC__elem {
         from { 
             background-color: $white;
-            color: $grey-black;
         }
         to { 
-            background-color: $blue; 
-            color: $white;
+            background-color: $color-4; 
         }
     }
 

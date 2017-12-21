@@ -1,0 +1,62 @@
+.item {
+
+    padding-bottom: 33px;
+    width: 300px;
+    margin: 0 auto 23px;
+
+    &__top {
+        width: 300px;
+        height: 235px;
+        background-color: $white;
+    }
+
+    &__top-i {
+        width: 100%
+    }
+
+    &:first-child &__bottom {
+        padding: 12px 18px 17px;
+    }
+
+    &__bottom {
+        padding: 21px 18px 19px;
+    }
+
+    &__title {
+        font-size: 1.5rem;
+        letter-spacing: 0.2px;
+    }
+
+    &__content {
+        font-size: 1rem;
+        padding-left: 2px;
+        line-height: 18px;
+    }
+
+    &__footer {
+        font-size: 1rem;
+    }
+
+    &__footer-line {
+        line-height: 18px;
+        padding: 0 22px 16px;
+    }
+
+    &__footer-ico {
+        margin-right: 4px;
+    }
+
+    &__footer-line .fa-mobile {
+        margin-right: 4px;
+    }
+
+    &__footer-txt {}
+    &:hover {}
+    &:hover &__title {}
+
+    /* --- Анимация --- */
+    &__title {}
+    &:hover {}
+    &:active {}
+    
+}

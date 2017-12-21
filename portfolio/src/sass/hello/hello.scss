@@ -1,8 +1,3 @@
-* { 
-    margin: 0; 
-    padding: 0; 
-}
-
 body {
     background-color: #eee;
 }
@@ -12,25 +7,10 @@ body {
     margin: 0px auto;
 }
 
-.photo {
-    max-width: 100%;
-    margin-top: -70px;
-    border-radius: 70px;
-    height: 140px;
-    border: 1px solid #d6d6d6;
-
-    &::before{
-        content: '';
-        height: 60px;
-        display: block;
-    }
-}
-
-
 .card {
     width: 300px;
     height: 233px;
-    background-color: #fff;
+    background-color: $white;
     border-radius: 10px;
     box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
     position: absolute;
@@ -42,14 +22,28 @@ body {
         text-align: center;
     }
 
+    &__user-photo {
+        max-width: 100%;
+        margin-top: -70px;
+        border-radius: 70px;
+        height: 140px;
+        border: 1px solid $color-9;
+
+        &::before{
+            content: '';
+            height: 60px;
+            display: block;
+        }
+    }
+
     &__name {
         text-align: center;
         min-height: 70px; /* -5px  */
         font-weight: bold;
         font-family: 'Open Sans', sans-serif;
         margin-top: 9px;
-        
     }
+
     &__name-str {
         font-size: 20px;
         color: #414141;
@@ -72,36 +66,34 @@ body {
         font-weight: bold;
         text-align: center;
         width: 134px;
-        height: 36px;
         border-radius: 20px;
         border: 2px solid $white;
         line-height: 36px;
-        margin: 0px auto 0px;
+        margin: 0px auto;
         text-decoration: none;
-    }
+    
+        &:hover {
+            background-color: $white;
+            color: #33c1e3;
+            cursor: pointer;
+            transition: transform .3s;
+            transform: scale(1.1);
+        }
 
-    &__btn:hover {
-        background-color: $white;
-        color: #33c1e3;
-        cursor: pointer;
+        &:active {
+            border: 2px solid $white;
+            color: $color-4;
+            transition: transform .3s;
+            transform: scale(1);
+        }
 
-        transition: transform .3s;
-        transform: scale(1.1);
-    }
+        &::selection {
+            background: transparent;
+        }
 
-    &__btn:active {
-        border: 2px solid $white;
-        color: $blue;
-        transition: transform .3s;
-        transform: scale(1);
-    }
-
-    &__btn::selection {
-        background: transparent;
-    }
-
-    &__btn::-moz-selection {
-        background: transparent;
+        &::-moz-selection {
+            background: transparent;
+        }
     }
 
 }

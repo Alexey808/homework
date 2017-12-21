@@ -1,45 +1,39 @@
 .career {
-    padding-left: 20px;
+    
+    padding-left: 18px;
     display: flex;
     flex-wrap: wrap;
     position: relative;
 
     &__title {
         width: 100%;
-        color: $grey-black;
+        color: $color-2;
         font-size: 35px;
         font-weight: 600;
-        padding: 0px 0 24px 0;
-        margin-top: -3px;
+        padding: 0 0 24px 0;
     }
+
     &__picture {
         width: 220px;
         height: 220px;
         border-radius: 9px;
-        background-color: $grey;
+        background-color: $color-1;
         overflow: hidden;
         background-position: center center;
-        margin-right: 20px;
+        margin: 0 18px 0 2px
     }
+
     &__picture-img {
         margin: -5px 0 0 -92px;
     }
+
     &__boxC {
         @include flex(flex-end, stretch);
         width: calc(100% - 240px); /*100%-20+220*/
-    }
-    &__boxC:after {
-        content: '';
-        position: absolute;
-        width: 1px;
-        height: 67%;
-        background-color: $shadows;
-        top: 117px;
-        left: 319px;
     }
 
     /* --- Анимация --- */
     &__title { @include an-lightSpeedIn(1s); }
     &__picture { @include an-zoomIn(1s); }
-    &__boxC:after { @include an-slideInDown(1s); }
+   
 }

@@ -1,0 +1,56 @@
+.boxC {
+    
+    margin: 0;
+
+    &__elem {
+        width: auto;
+        padding: 15px 20px 12px 20px;
+    
+        &:after { 
+            display: none;
+        }
+
+        &:hover {
+            &__elem-year {}
+            &__elem-year:after {}
+        }
+    }
+
+    &__elem-year {
+        display: none;
+
+        &:after {
+            display: none;
+        }
+    }
+
+
+    &__elem-title {
+        font-size: 1.15rem;
+        line-height: 26px;
+        padding: 0px;
+ 
+        &:before {}
+
+        &:after {
+            top: -10px;
+        }
+    }
+
+    &__elem-text {
+        font-size: 1rem;
+    }
+
+    &__elem-line {
+        padding: 0px;
+        line-height: 26px;
+    }
+
+    /* --- Анимация --- */
+
+    &__elem { 
+        @include an-flipInX(1s); 
+        z-index: 1; 
+    }
+
+}

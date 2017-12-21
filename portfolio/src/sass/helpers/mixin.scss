@@ -2,6 +2,7 @@
     width: 940px;
     height: 100%;
     margin: 0 auto;
+    padding: 0 10px;
 }
 @mixin flex($justify-content, $align-items) {
     // по умл @include flex(flex-start, stretch);

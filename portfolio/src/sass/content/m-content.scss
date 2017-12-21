@@ -1,4 +1,5 @@
 .content {
+
 	padding-top: 80px;
 	min-height: calc(100% - 115px);
     
@@ -6,22 +7,14 @@
         width: 100%;
         flex-wrap: wrap;
     }
+
     &__menu {
 		width: 100%;
 		height: auto;
-
     }
+
     &__section {
       	width: auto;
     }
+
 }
-
-
-
-
-
-/*about*/
-
-/*career*/
-
-/*portfolio*/
