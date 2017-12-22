@@ -3,10 +3,15 @@
 
     
     &__container {
-
+        @include wrap-tablet();
+        padding-top: 0px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__menu {
+        width: 100%;
+        height: auto;
 
     }
 

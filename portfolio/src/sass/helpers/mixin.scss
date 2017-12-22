@@ -11,7 +11,12 @@
     justify-content: $justify-content;
 }
 
-
+@mixin wrap-tablet() {
+    margin: 0 auto;
+    min-width: 520px;
+    max-width: 940px;
+    width: auto;
+}
 
 
 /* --- АНИМАЦИЯ ---------------------------------------- */

@@ -1,7 +1,11 @@
 .header {
 
-    &__container {}
+    &__container {
+    	@include wrap-tablet();
+    }
     
-    &__user {}
+    &__user {
+    	padding-left: 20px;
+    }
     
 }

@@ -4,7 +4,8 @@
 
 
     &__container {
-
+        @include wrap-tablet();
+     
     }
 
     &__ownership {

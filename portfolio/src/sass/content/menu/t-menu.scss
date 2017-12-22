@@ -1,25 +1,33 @@
 .menu {
     
-
+    display: flex;
+    width: 100%;
+    margin: 0;
 
     &__point:first-child {
-   
+        padding-left: 20px;
     }
 
     &__point {
+        width: auto;
+        line-height: 73px;
+        border-right: none;
+        font-size: 1.12rem;
+        padding-right: 30px;
+        text-align: center;
 
     }
 
     &__point_active {
-      
+        border-right: none;
     }
 
     &__link-tit {
- 
+       padding: 0;
     }
 
     &__link-ico {
- 
+
     }
 
     &__point-portfolio &__link-tit {

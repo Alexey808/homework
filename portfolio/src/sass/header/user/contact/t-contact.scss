@@ -1,0 +1,39 @@
+.contact {
+
+    height: 100%;
+    width: 100%;
+    @include flex(center, center);
+
+    &__button-ico {
+        display: none;
+    }
+    
+    &__button-name {
+        display: block;
+    }
+
+	&__button {
+        margin-right: 24px;
+    }
+
+    &__button:hover {
+       
+    }
+
+	&__list {
+        top: 40px;
+        left: -80px;
+    }
+
+    &__button:hover:after {}
+    &__list:before {}
+    &__list:after {}
+    &__list_hidden {}
+    &__point {}
+    &__point-link {}
+    &__point-link:hover {}
+    &__button:hover &__list {}
+	&__point-ico {}
+	&__point-data {}
+
+}
