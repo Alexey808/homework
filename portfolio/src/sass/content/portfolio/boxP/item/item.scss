@@ -27,6 +27,7 @@
     &__title {
         color: $color-4;
         padding-bottom: 2px;
+        font-size: 21.4px;
     }
 
     &:hover &__title {
@@ -35,6 +36,7 @@
 
     &__content {
         font-size: 14px;
+        padding-left: 1px;
     }
 
     &__footer {

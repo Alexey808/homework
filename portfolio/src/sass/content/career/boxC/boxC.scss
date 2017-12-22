@@ -63,16 +63,16 @@
         }
     }
 
-
     &__elem:hover &__elem-year {
         color: $color-4;
         font-size: 18px;
         margin: -1px 0 0 -12px;
+        font-weight: bold;
     }
 
     &__elem:hover &__elem-year:after {
         border: 5px solid $color-8;
-        right: -29px;
+        right: -26px;
         top: 0px;
     }
     
@@ -96,7 +96,7 @@
 
     &__elem-text {
         font-weight: 300;
-        font-size: 18px;
+        font-size: 18.1px;
         width: 100%;
         hyphens: auto;
     }

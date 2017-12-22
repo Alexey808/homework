@@ -1,6 +1,6 @@
 .menu {
 
-    margin-right: 31px; /*25+6*/
+    margin-right: 30px; /*25+6*/
     margin-top: 3px;
 
     &__point {
@@ -24,23 +24,21 @@
     &__link {
         text-decoration: none;
         color: $color-2;
+    
+        &:hover {
+            color: $color-4;
+        }
     }
 
-    &__link:hover {
-        color: $color-4;
-    }
-
-    &__link-tit {
-        padding-left: 5px;
-    }
+    &__link-tit {}
 
     &__link-ico {
-        margin-right: -1px;
+        margin-right: 5px;
+    }
+    &__link .fa-rocket {
+        margin-right: 3px;
     }
 
-    &__point-portfolio &__link-tit {
-        margin-right: -1px;
-    }
 
     
     /* --- Анимация ------------------------------------ */

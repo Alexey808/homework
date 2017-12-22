@@ -5,6 +5,7 @@
     &__elem {
         width: auto;
         padding: 15px 20px 12px 20px;
+        margin-bottom: 18px;
     
         &:after { 
             display: none;
@@ -29,16 +30,18 @@
         font-size: 1.15rem;
         line-height: 26px;
         padding: 0px;
+        margin-right: 4px;
  
         &:before {}
 
         &:after {
-            top: -10px;
+            top: -12px;
         }
     }
 
     &__elem-text {
         font-size: 1rem;
+        padding: 1px;
     }
 
     &__elem-line {

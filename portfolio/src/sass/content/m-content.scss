@@ -6,6 +6,7 @@
     &__container {
         width: 100%;
         flex-wrap: wrap;
+        min-width: auto;
     }
 
     &__menu {

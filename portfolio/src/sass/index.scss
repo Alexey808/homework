@@ -13,6 +13,11 @@
 @import "header/user/user.scss";
 @import "header/user/contact/contact.scss";
 
+@media screen and (max-width: 940px) {
+	@import "header/t-header.scss";
+	@import "header/user/t-user.scss";
+	@import "header/user/contact/t-contact.scss";
+}
 @media screen and (max-width: 520px) {
 	@import "header/m-header.scss";
 	@import "header/user/m-user.scss";
@@ -22,6 +27,10 @@
 @import "content/content.scss";
 @import "content/menu/menu.scss";
 
+@media screen and (max-width: 940px) {
+	@import "content/t-content.scss";
+	@import "content/menu/t-menu.scss"
+}
 @media screen and (max-width: 520px) {
 	@import "content/m-content.scss";
 	@import "content/menu/m-menu.scss";
@@ -29,6 +38,9 @@
 /* --- about --- */
 @import "content/about/about.scss";
 
+@media screen and (max-width: 940px) {
+	@import "content/about/t-about.scss";
+}
 @media screen and (max-width: 520px) {
 	@import "content/about/m-about.scss";
 }
@@ -36,6 +48,8 @@
 /* --- career --- */
 @import "content/career/career.scss";
 @import "content/career/boxC/boxC.scss";
+
+@media screen and (max-width: 940px) {}
 @media screen and (max-width: 520px) {
 	@import "content/career/m-career.scss";
 	@import "content/career/boxC/m-boxC.scss";
@@ -44,6 +58,8 @@
 @import "content/portfolio/portfolio.scss";
 @import "content/portfolio/boxP/boxP.scss";
 @import "content/portfolio/boxP/item/item.scss";
+
+@media screen and (max-width: 940px) {}
 @media screen and (max-width: 520px) { 
 	@import "content/portfolio/m-portfolio.scss";
 	@import "content/portfolio/boxP/m-boxP.scss";
@@ -53,6 +69,10 @@
 @import "footer/footer.scss";
 @import "footer/soc/soc.scss";
 
+@media screen and (max-width: 940px) {
+	@import "footer/t-footer.scss";
+	@import "footer/soc/t-soc.scss";
+}
 @media screen and (max-width: 520px) {
 	@import "footer/m-footer.scss";
 	@import "footer/soc/m-soc.scss";

@@ -1,5 +1,4 @@
 .career {
-    
     padding-left: 18px;
     display: flex;
     flex-wrap: wrap;
@@ -20,11 +19,11 @@
         background-color: $color-1;
         overflow: hidden;
         background-position: center center;
-        margin: 0 18px 0 2px
+        margin: 1px 18px 0 2px
     }
 
     &__picture-img {
-        margin: -5px 0 0 -92px;
+        margin: -7px 0 0 -93px;
     }
 
     &__boxC {
@@ -35,5 +34,4 @@
     /* --- Анимация --- */
     &__title { @include an-lightSpeedIn(1s); }
     &__picture { @include an-zoomIn(1s); }
-   
 }

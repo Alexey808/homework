@@ -54,5 +54,6 @@
 ### Матерьялы (PSD макеты)
 - [Desktop](https://drive.google.com/open?id=18sC3bCSaDxvOVmWXHlDksW_Ke07gN6qn)  
 - [Mobile](https://drive.google.com/open?id=1q7AbbOqxxbAuwRMA_T5Po5L0e1jZ-APH)  
+- [Tablet](https://drive.google.com/open?id=1Fqqm2yOrMtKlJnBPMJljcOZ6YzOcidKF) 
 
 

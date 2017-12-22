@@ -1,18 +1,20 @@
 .content {
     
-    padding-top: 101px;
+    padding-top: 80px;
     color: $color-1;
     background-color: $color-3;
-    min-height: calc(100% - 151px);
+    min-height: calc(100% - 130px);
     width: 100%;
-    // @include wrap();
-    // width: 940px;
-    // padding: 0 10px;
-    // margin: 0 auto;
+
+
 
     &__container {
         @include wrap();
         @include flex(space-between, stretch);
+        margin: 0 auto;
+        padding-top: 21px;
+        min-width: 940px;
+        background-color: $color-3;
     }
     
     &__menu {

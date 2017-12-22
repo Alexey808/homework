@@ -1,15 +1,8 @@
-$(".about__text").mCustomScrollbar({
-    axis:"yx",
-    theme:"dark"
-});
-
-
-
-    // (function($){
-    //     $(window).on("load",function(){
-    //         $(".description__text").mCustomScrollbar({
-    //         	scrollbarPosition: "outside"
-            	
-    //         });
-    //     });
-    // })(jQuery);
+(function($){
+    $(window).on("load",function(){
+        $(".about__text").mCustomScrollbar({
+            axis:"yx",
+            theme:"dark"
+        });
+    });
+})(jQuery);
