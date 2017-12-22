@@ -13,7 +13,7 @@
 
 - [intro](https://alexey808.github.io/homework/intro)
 
-**hw-№2** (*hello->perfectpixel+mobile+anim / about->perfectpixel+mobile+anim / career->perfectpixel+anim / porfolio -> perfectpixel+anim*)
+**hw-№2**
 
 - [hello](https://alexey808.github.io/homework/portfolio/build/hello.html)
 - [about+career+portfolio](https://alexey808.github.io/homework/portfolio/build/index.html)
@@ -49,6 +49,7 @@
 - [Адаптивная вёрстка](https://drive.google.com/open?id=1Kb_aClaAYI1j4Qbdv2FDCQKS5ic8305w)  
 - [Анимация CSS](https://rawgit.com/urfu-2015/verstka-slides/master/08-animation/index.html#/)  
 - [Слайды презентаций по вёрстке](https://github.com/urfu-2015/verstka-slides)
+- [SVG](https://drive.google.com/open?id=1xc5XErLY3NvUnWdIyp7QxXErUsIYcWKz)  
 
 ### Матерьялы (PSD макеты)
 - [Desktop](https://drive.google.com/open?id=18sC3bCSaDxvOVmWXHlDksW_Ke07gN6qn)  
