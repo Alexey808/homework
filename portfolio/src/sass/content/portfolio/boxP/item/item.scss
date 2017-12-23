@@ -69,7 +69,9 @@
     &__title { @include an-lightSpeedIn(1s); }
 
     &:hover {
- 
+        transition: transform .3s;
+        transform: scale(1.05, 1.05);
+        will-change: transform;
     }
 
     &:active {
@@ -80,27 +82,35 @@
 }
 
 /*test*/
-.item:hover {
-    transition: transform .3s;
-    transform: scale(1.05);
-}
-.item:hover .item__top-i {
-    transition: transform .3s;
-    transform: scale(1.05);
-}
-.item:hover .item__title {
-    transition: transform .3s;
-    transform: scale(1.05);
-}
-.item:hover .item__content {
-    transition: transform .3s;
-    transform: scale(1.05);
-}
-.item:hover .item__footer-ico {
-    transition: transform .3s;
-    transform: scale(1.05);
-}
-.item:hover .item__footer-txt {
-    transition: transform .3s;
-    transform: scale(1.05);
-}
+// .item:hover {
+//     transition: transform .3s;
+//     transform: scale(1.05, 1.05);
+//     will-change: transform;
+// transform: translate3d(1.05, 1.05, 1.05);
+// -webkit-filter: blur(0px); 
+// filter: none; 
+// -webkit-filter: blur(0px); 
+// -moz-filter: blur(0px); 
+// -ms-filter: blur(0px);
+// filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+// }
+// .item:hover .item__top-i {
+//     transition: transform .3s;
+//     transform: scale(1.05);
+// }
+// .item:hover .item__title {
+//     transition: transform .3s;
+//     transform: scale(1.05);
+// }
+// .item:hover .item__content {
+//     transition: transform .3s;
+//     transform: scale(1.05);
+// }
+// .item:hover .item__footer-ico {
+//     transition: transform .3s;
+//     transform: scale(1.05);
+// }
+// .item:hover .item__footer-txt {
+//     transition: transform .3s;
+//     transform: scale(1.05);
+// }

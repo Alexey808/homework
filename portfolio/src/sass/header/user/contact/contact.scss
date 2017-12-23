@@ -9,7 +9,7 @@
     }
 
     &__button {
-        border-bottom: 1px dashed $color-4;
+        border-bottom: 2px dotted $color-4;
         font-size: 18px;
         color: $color-4;
         font-weight: bold;
@@ -17,7 +17,7 @@
 
         &:hover {
             color: $color-5;
-            border-bottom: 1px dashed $color-5;
+            border-bottom: 2px dotted $color-5;
             cursor: pointer;
         }
 
