@@ -69,8 +69,7 @@
     &__title { @include an-lightSpeedIn(1s); }
 
     &:hover {
-        transition: transform .3s;
-        transform: scale(1.05);
+ 
     }
 
     &:active {
@@ -80,3 +79,28 @@
     @include an-jackInTheBox(1.5s);
 }
 
+/*test*/
+.item:hover {
+    transition: transform .3s;
+    transform: scale(1.05);
+}
+.item:hover .item__top-i {
+    transition: transform .3s;
+    transform: scale(1.05);
+}
+.item:hover .item__title {
+    transition: transform .3s;
+    transform: scale(1.05);
+}
+.item:hover .item__content {
+    transition: transform .3s;
+    transform: scale(1.05);
+}
+.item:hover .item__footer-ico {
+    transition: transform .3s;
+    transform: scale(1.05);
+}
+.item:hover .item__footer-txt {
+    transition: transform .3s;
+    transform: scale(1.05);
+}

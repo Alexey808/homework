@@ -13,18 +13,17 @@
     }
 
 	&__button {
-        margin-right: 24px;
+        margin-right: 20px;
     }
 
-    &__button:hover {
-       
-    }
+    
 
 	&__list {
         top: 40px;
         left: -80px;
     }
-
+    
+    &__button:hover {}
     &__button:hover:after {}
     &__list:before {}
     &__list:after {}

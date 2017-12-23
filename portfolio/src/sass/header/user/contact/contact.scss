@@ -14,12 +14,23 @@
         color: $color-4;
         font-weight: bold;
         position: relative;
-    }
 
-    &__button:hover {
-        color: $color-5;
-        border-bottom: 1px dashed $color-5;
-        cursor: pointer;
+        &:hover {
+            color: $color-5;
+            border-bottom: 1px dashed $color-5;
+            cursor: pointer;
+        }
+
+        &:hover:after {
+            content: '';
+            position: absolute;
+            width: 190px;
+            height: 45px;
+            background-color: rgba(85, 85, 85, 0);
+            left: -31px;
+            top: -2px;
+        }
+
     }
 
     &__list {
@@ -36,7 +47,40 @@
         padding: 10px 15px;
         line-height: 40px;
         z-index: 3;
+
+        &:before {
+            content: '';
+            border-left: 16px solid transparent;
+            border-right: 4px solid transparent;
+            border-bottom: 11px solid $white;
+            border-bottom-color: $shadows;
+            position: absolute;
+            bottom: 100%;
+            left: 117px;
+        }
+
+        &:after {
+            content: '';
+            border-left: 13px solid transparent;
+            border-right: 3px solid transparent;
+            border-bottom: 9px solid $shadows;
+            border-bottom-color: $color-3;
+            position: absolute;
+            bottom: 100%;
+            left: 119px;
+        }
     }
+
+    &__point-link {
+        text-decoration: none;
+        color: $color-1;
+        white-space: nowrap;
+   
+        &:hover {
+            color: $color-4;
+        }
+    }
+
 
     &__list_hidden {
         visibility: hidden;
@@ -44,48 +88,6 @@
 
     &__point {
         position: relative;
-    }
-
-    &__point-link {
-        text-decoration: none;
-        color: $color-1;
-        white-space: nowrap;
-    }
-
-    &__point-link:hover {
-        color: $color-4;
-    }
-
-    &__button:hover:after {
-        content: '';
-        position: absolute;
-        width: 190px;
-        height: 45px;
-        background-color: rgba(85, 85, 85, 0);
-        left: -31px;
-        top: -2px;
-    }
-
-    &__list:before {
-        content: '';
-        border-left: 16px solid transparent;
-        border-right: 4px solid transparent;
-        border-bottom: 11px solid $white;
-        border-bottom-color: $shadows;
-        position: absolute;
-        bottom: 100%;
-        left: 117px;
-    }
-
-    &__list:after {
-        content: '';
-        border-left: 13px solid transparent;
-        border-right: 3px solid transparent;
-        border-bottom: 9px solid $shadows;
-        border-bottom-color: $color-3;
-        position: absolute;
-        bottom: 100%;
-        left: 119px;
     }
 
     &__point-ico {}

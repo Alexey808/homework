@@ -1,3 +1,5 @@
+!!! notice "Пример notice"
+    здесь указан класс notice
 
 ## README.md
 
@@ -33,9 +35,15 @@
 - [Иконки SVG](https://www.iconfinder.com)  
 - [Шрифты Google Fonts](https://fonts.google.com/)
 - [Иконки Font Awesome](http://fontawesome.io/icons/)
-- [html валидатор](https://jigsaw.w3.org/css-validator/)  
-- [css валидатор](https://jigsaw.w3.org/css-validator/)  
-- [css анимация, библиотека](https://daneden.github.io/animate.css/)  
+- [css анимация, библиотека](https://daneden.github.io/animate.css/) 
+- #### Пусконаладка
+  + [Валидатор html](https://jigsaw.w3.org/css-validator/)  
+  + [Валидатор css](https://jigsaw.w3.org/css-validator/)  
+  + [Проверка орфографии](https://www.artlebedev.ru/orfograf/)  
+  + [Генератор Favicon](https://realfavicongenerator.net/)  
+  + [Проверка под мобильные устройства](https://search.google.com/test/mobile-friendly)
+  + [Время загрузки страницы](https://developers.google.com/speed/pagespeed/insights/)
+  + [Оптимизация изображений](https://tinypng.com/)
 
 ### Презентации
 - [CSS](https://drive.google.com/open?id=1sBnc-3fVCdUGBJ2YHcpfT3JJlKqo-9bS)  
@@ -50,6 +58,7 @@
 - [Анимация CSS](https://rawgit.com/urfu-2015/verstka-slides/master/08-animation/index.html#/)  
 - [Слайды презентаций по вёрстке](https://github.com/urfu-2015/verstka-slides)
 - [SVG](https://drive.google.com/open?id=1xc5XErLY3NvUnWdIyp7QxXErUsIYcWKz)  
+- [Пусконаладка](https://drive.google.com/open?id=1QjbUhvIrDrMl-_rFIsM_lnUXtk8LqJEU)  
 
 ### Матерьялы (PSD макеты)
 - [Desktop](https://drive.google.com/open?id=18sC3bCSaDxvOVmWXHlDksW_Ke07gN6qn)  
