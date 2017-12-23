@@ -1,24 +1,16 @@
 .footer {
-
     width: 100%;
-
-
+ 
     &__container {
         @include wrap-tablet();
-     
+        margin: 0 25px;
     }
 
     &__ownership {
- 
-    
-        &:before {
-      
-        }
+        &:before {}
     }
     
-    &__soc {
-       
-    }
+    &__soc {}
     
 }
 

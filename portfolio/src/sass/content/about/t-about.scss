@@ -1,25 +1,41 @@
 .about {
-
-    @include flex(flex-start, stretch);
-    margin-top: 15px;
+   
+    @include flex(flex-end, stretch);
+    // display: block !important;
+    // @include flex(center, stretch);
+    // @include wrap-tablet();
+    flex-wrap: wrap;
+    margin: 13px 5%;
     
     &__photo {
-        width: 20%;
-        height: 20%;
-        margin: 0px 0px 0 0px;
-        padding: 0 0 0 0px;
-        display: block;
+        width: 30%;
+        height: 30%;
+        max-width: 220px;
+        margin: 3px 42px 20px 0px;
+        position: relative;
     }
     
-    &__photo-i {}
-
-    &__description {
-       
+    &__photo-i {
+        max-width: 100%;
+        margin-bottom: -5px; /*толщина border*/
+        
     }
 
-    &__title {}
+    &__description {
+       width: 442px;
+       height: auto;
+       width: auto;
+       width: 58%;
+    }
 
-    &__text {}
+    &__title {
+        width: 100%;
+    }
+
+    &__text {
+        height: 366px;
+        width: auto;
+    }
 
     &__button {}
 
@@ -28,7 +44,6 @@
     }
 
     &__button-ico {}
-
     &__button-txt {}
 
     /* --- Анимация --- */
@@ -42,8 +57,30 @@
 
 
 /* --- Скролл ------------------------------------------ */
-.mCSB_container_wrapper {}
-.mCSB_container_wrapper>.mCSB_container {}
-.mCSB_draggerContainer {}
-.mCSB_dragger_bar {}
-.mCSB_draggerRail {}
+
+// .mCSB_container_wrapper {
+//     margin-right: 0 !important;
+// }
+
+// .mCSB_container_wrapper>.mCSB_container {
+//     padding-right: 19px !important;
+// }
+
+// .mCSB_draggerContainer {
+    
+// }
+.mCSB_container {
+    width: auto;
+    width: 100px;
+}
+// .mCSB_dragger {
+//     height: 132px !important;
+// }
+// .mCSB_dragger_bar {
+   
+//     height: 100% !important;
+// }
+
+// .mCSB_draggerRail {
+//     margin-left: 8px !important;
+// }
