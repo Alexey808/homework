@@ -5,17 +5,16 @@
     margin: 0;
 
     &__point:first-child {
-        padding-left: 20px;
+        padding-left: 10px;
     }
 
     &__point {
         width: auto;
-        line-height: 73px;
+        line-height: 50px;
         border-right: none;
-        font-size: 1.12rem;
-        padding-right: 30px;
+        font-size: 0.87rem;
+        padding-right: 19px;
         text-align: center;
-
     }
 
     &__point_active {
@@ -27,11 +26,11 @@
     }
 
     &__link-ico {
-
+       
     }
 
     &__point-portfolio &__link-tit {
-
+        margin: 0;
     }
 
     &__point_active &__link {}

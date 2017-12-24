@@ -1,0 +1,22 @@
+.item {
+
+    &__top {}
+    &__top-i {}
+    &__bottom {}
+    &__title {}
+    &__content {}
+    &__footer {}
+    &__footer-line {}
+    &__footer-ico {}
+    &__footer-txt {}
+    &__footer-line .fa-mobile {}
+    &:first-child &__bottom {}
+    &:hover {}
+    &:hover &__title {}
+
+    /* --- Анимация --- */
+    &__title {}
+    &:hover {}
+    &:active {}
+    
+}

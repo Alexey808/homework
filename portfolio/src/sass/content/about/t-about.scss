@@ -1,11 +1,7 @@
 .about {
-   
     @include flex(flex-end, stretch);
-    // display: block !important;
-    // @include flex(center, stretch);
-    // @include wrap-tablet();
     flex-wrap: wrap;
-    margin: 13px 5%;
+    margin: 20px 5%;
     
     &__photo {
         width: 30%;
@@ -18,7 +14,6 @@
     &__photo-i {
         max-width: 100%;
         margin-bottom: -5px; /*толщина border*/
-        
     }
 
     &__description {
@@ -37,12 +32,11 @@
         width: auto;
     }
 
-    &__button {}
-
     &__button-dw {
         &:hover {}
     }
 
+    &__button {}
     &__button-ico {}
     &__button-txt {}
 
@@ -57,30 +51,7 @@
 
 
 /* --- Скролл ------------------------------------------ */
-
-// .mCSB_container_wrapper {
-//     margin-right: 0 !important;
-// }
-
-// .mCSB_container_wrapper>.mCSB_container {
-//     padding-right: 19px !important;
-// }
-
-// .mCSB_draggerContainer {
-    
-// }
 .mCSB_container {
     width: auto;
     width: 100px;
 }
-// .mCSB_dragger {
-//     height: 132px !important;
-// }
-// .mCSB_dragger_bar {
-   
-//     height: 100% !important;
-// }
-
-// .mCSB_draggerRail {
-//     margin-left: 8px !important;
-// }

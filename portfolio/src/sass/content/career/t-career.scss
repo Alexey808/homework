@@ -1,0 +1,40 @@
+.career {
+    width: auto;
+    padding-left: 0;
+    margin: 20px 18px;
+    justify-content: center;
+    @include wrap-mobile();
+
+    &__title {
+        padding: 0px;
+        margin-bottom: 25px;
+    }
+
+    &__picture {
+        width: 228px;
+        height: 228px;
+        margin: 1px 0 25px;
+    }
+
+    &__boxC {
+        width: auto;
+        padding-left: 81px;
+    }
+    
+    &__picture-img {}
+
+    /* --- Анимация --- */
+    &__title {}
+    &__picture {}
+    &__boxC:after {}
+
+    /* --- Медиа запросы --- */
+    @media screen and (max-width: 680px) {
+        &__title {
+            text-align: center;
+        }
+        &__boxC {
+            padding: 0 40px;
+        }
+    }
+}

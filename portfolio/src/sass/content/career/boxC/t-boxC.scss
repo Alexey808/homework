@@ -1,0 +1,50 @@
+.boxC {
+    
+    margin: 0;
+
+    &__elem {
+        width: auto;
+        &:after {}
+        &:hover {
+            &__elem-year {}
+            &__elem-year:after {}
+        }
+    }
+
+    &__elem-year {
+        &:after {}
+    }
+
+    &__elem-title {
+        font-size: 1.15rem;
+        &:before {}
+        &:after {}
+    }
+
+    &__elem-text {
+        font-size: 1rem;
+    }
+
+    &__elem-line {}
+
+    /* --- Анимация --- */
+    &__elem { 
+        @include an-flipInX(1s); 
+        z-index: 1; 
+    }
+
+    /* --- Медиа запросы */
+    @media screen and (max-width: 680px) {
+        &__elem-year {
+            display: none;
+        }
+        &__elem {
+            &:after { 
+                display: none;
+            }
+        }
+    }
+
+}
+
+

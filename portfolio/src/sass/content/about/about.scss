@@ -30,7 +30,7 @@
     }
 
     &__text {
-        width: 395px; // 100%;
+        width: 395px; 
         height: 288px;
         font-size: 18px;
         overflow: auto;
@@ -109,4 +109,11 @@
 
 .mCSB_draggerRail {
     margin-left: 8px !important;
+}
+
+#mCSB_1_scrollbar_horizontal {
+    display: none;
+}
+#mCSB_1_scrollbar_horizontal .mCSB_draggerContainer {
+    display: none;
 }

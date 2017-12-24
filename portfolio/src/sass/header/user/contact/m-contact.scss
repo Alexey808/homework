@@ -22,26 +22,33 @@
         border-bottom: none;
     }
 
-	&__list {
+    &__button:hover:after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 65px;
+        background-color: rgba(85, 85, 85, 0);
+        left: -30px;
+        top: 0px;
+    }
+    
+    &__list {
         top: 58px;
         left: -130px;
-    }
 
-    &__button:hover:after {
-        display: none;
-    }
-    &__list:before {
-        border-left: 10px solid transparent;
-        border-right: 0px solid transparent;
-        border-bottom: 10px solid $white;
-        left: 152px;
-        z-index: 2;
-    }
-    &__list:after {
-        border-left: 14px solid transparent;
-        border-right: 0px solid transparent;
-        border-bottom: 16px solid $shadows;
-        left: 150px;
+        &:before {
+            border-left: 10px solid transparent;
+            border-right: 0px solid transparent;
+            border-bottom: 10px solid $white;
+            left: 152px;
+            z-index: 2;
+        }
+        &:after {
+            border-left: 14px solid transparent;
+            border-right: 0px solid transparent;
+            border-bottom: 16px solid $shadows;
+            left: 150px;
+        }
     }
 
     &__list_hidden {}

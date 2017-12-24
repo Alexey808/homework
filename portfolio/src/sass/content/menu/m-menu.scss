@@ -13,7 +13,7 @@
         line-height: 50px;
         border-right: none;
         font-size: 0.87rem;
-        padding-right: 19px;
+        padding-right: 18px;
         text-align: center;
     }
 
@@ -34,7 +34,9 @@
     }
 
     &__point_active &__link {}
-    &__link {}
-    &__link:hover {}
+    &__link {
+       &:hover {} 
+    }
+    
     
 }

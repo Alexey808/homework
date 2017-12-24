@@ -2,7 +2,6 @@
     width: 940px;
     height: 100%;
     margin: 0 auto;
-    // padding: 0 10px;
 }
 @mixin flex($justify-content, $align-items) {
     // по умл @include flex(flex-start, stretch);
@@ -12,12 +11,13 @@
 }
 
 @mixin wrap-tablet() {
-    margin: 0 auto;
-    
     max-width: 940px;
     width: auto;
 }
-
+@mixin wrap-mobile() {
+    min-width: 320px;
+    width: auto;
+}
 
 /* --- АНИМАЦИЯ ---------------------------------------- */
 

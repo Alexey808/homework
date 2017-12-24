@@ -5,8 +5,7 @@
     background-color: $color-3;
     min-height: calc(100% - 130px);
     width: 100%;
-
-
+    min-width: 300px;
 
     &__container {
         @include wrap();
@@ -20,6 +19,7 @@
     &__menu {
         color: $color-2;
         width: 220px;
+        min-width: auto;
     }
 
     &__section {

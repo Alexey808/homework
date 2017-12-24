@@ -1,11 +1,15 @@
 .header {
+	padding: 0px;
+	margin: 0px;
 
     &__container {
     	@include wrap-tablet();
+    	margin-left: 21px;
+    	padding-left: 0px;
+    	width: auto;
     }
     
-    &__user {
-    	padding-left: 21px;
-    }
+    &__user {}
     
 }
+
