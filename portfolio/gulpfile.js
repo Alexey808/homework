@@ -9,12 +9,12 @@ var autoprefixer  = require('gulp-autoprefixer');
 var sourceMaps    = require('gulp-sourcemaps');
 var gulpif        = require('gulp-if');
 var clean         = require('gulp-clean');
-var browserSync   = require('browser-sync');//.create();
+var browserSync   = require('browser-sync');
+var uglify        = require('gulp-uglify');
 
 
 //Дефолтный таск ---------------------------------------------------+
 gulp.task('default', ['build', 'server', 'watch']);
-
 
 // Сервер ----------------------------------------------------------+
 var config = {
@@ -85,7 +85,6 @@ gulp.task('watch', ()=> {
 // Сборка html -----------------------------------------------------+
 gulp.task('html:build', ()=> {
     gulp.src(path.src.html)
-        // .pipe(rigger()) //Прогоним через rigger
         .pipe(gulp.dest(path.build.html)) 
         .pipe(browserSync.reload({stream: true})); 
 });
@@ -93,13 +92,12 @@ gulp.task('html:build', ()=> {
 // Сборка css ------------------------------------------------------+
 gulp.task('style:build', ()=>{
     gulp.src(path.src.style)
-        .pipe(sourceMaps.init())
-        // .pipe(sass({outputStyle:'expanded'}).on('error',sass.logError))
+        // .pipe(sourceMaps.init())
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(autoprefixer({browsers: ['last 10 versions'], cascade: false}))
-        // .pipe(cleanCSS())
+        .pipe(cleanCSS())
         .pipe(concat('main.css'))
-        .pipe(sourceMaps.write())
+        // .pipe(sourceMaps.write())
         .pipe(gulp.dest(path.build.css))
         .pipe(browserSync.reload({stream: true})); 
 
@@ -107,8 +105,8 @@ gulp.task('style:build', ()=>{
 
 // Сборка js -------------------------------------------------------+
 gulp.task('js:build', ()=> {
-    gulp.src(path.src.js) //Найдем наш main файл
-        //.pipe(uglify())
+    gulp.src(path.src.js)
+        .pipe(uglify())
         .pipe(concat('main.js'))
         .pipe(gulp.dest(path.build.js))
         .pipe(browserSync.reload({stream: true})); 
