@@ -1,8 +1,14 @@
 .boxP {
-
+    @include flex(space-evenly, stretch);
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0px;
+    font-size: 21px;
+    position: relative;
     margin: 0 auto;
 
+
     /* --- Анимация --- */
-    &__title {}
+    &__title { @include an-lightSpeedIn(1s); }
     
 }

@@ -1,19 +1,28 @@
 .boxC {
-    
+    font-size: 21px;
+    position: relative;
     margin: 0;
 
     &__elem {
-        width: auto;
+        @include flex(flex-start, center);
+        flex-wrap: wrap;
+        // width: auto;
+        border-radius: 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        position: relative;
         padding: 15px 20px 12px 20px;
         margin-bottom: 18px;
-    
+        background-color: $white;
+        word-wrap: break-word;
+
         &:after { 
             display: none;
         }
 
         &:hover {
-            &__elem-year {}
-            &__elem-year:after {}
+            background-color: $color-4;
+            cursor: pointer;
+            color: $white;
         }
     }
 
@@ -31,10 +40,18 @@
         line-height: 26px;
         padding: 0px;
         margin-right: 4px;
- 
-        &:before {}
+        font-weight: 400;
+        position: relative;
+        display: flex;
+        width: 100%;
+
+        &:before {
+            content: '\201c';
+        }
 
         &:after {
+            content: '\201e';
+            position: absolute;
             top: -12px;
         }
     }
@@ -42,11 +59,16 @@
     &__elem-text {
         font-size: 1rem;
         padding: 1px;
+        width: 100%;
+        hyphens: auto;
+        font-weight: 300;
     }
 
     &__elem-line {
         padding: 0px;
         line-height: 26px;
+        width: 100%;
+        word-wrap: break-word;
     }
 
     /* --- Анимация --- */
@@ -54,6 +76,16 @@
     &__elem { 
         @include an-flipInX(1s); 
         z-index: 1; 
+    }
+    &__elem:after { @include an-slideInDown(1.5s); }
+   
+    @keyframes boxC__elem {
+        from { 
+            background-color: $white;
+        }
+        to { 
+            background-color: $color-4; 
+        }
     }
 
 }

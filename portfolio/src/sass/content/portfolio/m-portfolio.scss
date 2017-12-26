@@ -1,16 +1,22 @@
 .portfolio {
+
+    @include flex(flex-start, stretch);
+    flex-wrap: wrap;
 	margin: 0px;
 	
     &__title {
         width: 100%;
         text-align: center;
         margin: 16px auto 22px;
+        color: $color-2;
+        font-size: 35px;
+        font-weight: 600;
     }
 
     &__boxP {}
 
     /* --- Анимация --- */
-    &__title {}
+    &__title { @include an-lightSpeedIn(1s); }
 
 }
 

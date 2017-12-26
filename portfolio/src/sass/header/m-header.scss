@@ -1,11 +1,17 @@
 .header {
+    position: fixed;
+    z-index: 2;
+    height: 79px;
+    width: 100%;
+    background-color: $white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid $shadows;
+    color: $color-2;
 
     &__container {
         width: 100%;
         margin-left: 10px;
-        padding-left: 0;
-        padding-right: 0;
-        width: auto;
+        padding: 2px 0 0 0;
     }
     
     &__user {

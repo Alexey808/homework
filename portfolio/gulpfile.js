@@ -44,7 +44,7 @@ var path = {
     },
     watch: {
         html: 'src/*.html',
-        style: 'src/**/*.scss',
+        style: 'src/sass/**/*.*',
         js: 'src/main.js',
         img: 'src/img/*.*'
     },
@@ -68,16 +68,16 @@ gulp.task('clean:build', ()=> {
 
 // Отслеживание изменений ------------------------------------------+
 gulp.task('watch', ()=> {
-    gulp.watch([path.watch.html], function(event, cb) {
+    gulp.watch([path.watch.html], (event, cb) => {
         gulp.start('html:build');
     });
-    gulp.watch([path.watch.style], function(event, cb) {
+    gulp.watch([path.watch.style], (event, cb) => {
         gulp.start('style:build');
     });
-    gulp.watch([path.watch.html], function(event, cb) {
+    gulp.watch([path.watch.html], (event, cb) => {
         gulp.start('js:build');
     });
-    gulp.watch([path.watch.style], function(event, cb) {
+    gulp.watch([path.watch.style], (event, cb) => {
         gulp.start('image:build');
     });
 });
@@ -90,12 +90,12 @@ gulp.task('html:build', ()=> {
 });
 
 // Сборка css ------------------------------------------------------+
-gulp.task('style:build', ()=>{
+gulp.task('style:build', ()=> {
     gulp.src(path.src.style)
         // .pipe(sourceMaps.init())
         .pipe(sass.sync().on('error', sass.logError))
-        .pipe(autoprefixer({browsers: ['last 10 versions'], cascade: false}))
-        .pipe(cleanCSS())
+        .pipe(autoprefixer({browsers: ['last 9 versions'], cascade: false}))
+        // .pipe(cleanCSS())
         .pipe(concat('main.css'))
         // .pipe(sourceMaps.write())
         .pipe(gulp.dest(path.build.css))
@@ -106,7 +106,7 @@ gulp.task('style:build', ()=>{
 // Сборка js -------------------------------------------------------+
 gulp.task('js:build', ()=> {
     gulp.src(path.src.js)
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(concat('main.js'))
         .pipe(gulp.dest(path.build.js))
         .pipe(browserSync.reload({stream: true})); 

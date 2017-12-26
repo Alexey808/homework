@@ -1,32 +1,48 @@
 .career {
-    width: auto;
-    padding-left: 0;
-    margin: 20px 18px;
+
+    // padding-left: 0;
+    // margin: 20px 18px;
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
     @include wrap-mobile();
 
     &__title {
-        padding: 0px;
-        margin-bottom: 25px;
+        width: 100%;
+        color: $color-2;
+        font-size: 35px;
+        font-weight: 600;
+        padding: 0 0 10px 0;
+        text-align: center;
     }
 
     &__picture {
-        width: 228px;
-        height: 228px;
+        width: 220px;
+        height: 220px;
+        border-radius: 9px;
+        background-color: $color-1;
+        overflow: hidden;
+        background-position: center center;
         margin: 1px 0 25px;
     }
 
     &__boxC {
         width: auto;
-        padding-left: 81px;
+        // padding-left: 81px;
+        @include flex(flex-end, stretch);
+        padding: 0 10px 0 81px;
+        // margin: 10px auto 27px;
+        margin: 0px;
     }
     
-    &__picture-img {}
+    &__picture-img {
+        margin: -7px 0 0 -93px;
+    }
 
     /* --- Анимация --- */
-    &__title {}
-    &__picture {}
-    &__boxC:after {}
+    &__title { @include an-lightSpeedIn(1s); }
+    &__picture { @include an-zoomIn(1s); }
 
     /* --- Медиа запросы --- */
     @media screen and (max-width: 680px) {

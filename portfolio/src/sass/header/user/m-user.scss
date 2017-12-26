@@ -1,15 +1,22 @@
 .user {
 
+    @include flex(space-between, stretch);
     height: 100%;
-    padding: 0px;
+    padding-top: 9px;
     
     &__avatar {
-        margin-right: 18px;
+        border-radius: 50%;
+        width: 59px;
+        height: 59px;
+        background-color: $color-3;
+        border: 2px solid $shadows;
+        overflow: hidden;
+        margin: -2px 18px 0 -2px;
     }
 
 	&__avatar-name {
         @include flex(flex-start, center);
-        margin-left: 10px;
+        width: 400px;
         width: auto;
     }
 	
@@ -22,14 +29,21 @@
     }
 
 	&__contact {
-        width: 25%;
+        width: 30%;
+        padding-right: 21px;
     }
 
     &__name-br {
         display: block;
     }
 
-    &__avatar-i {}
-    &__name-a {}
+    &__avatar-i {
+        max-width: 100%;
+    }
+
+    &__name-a {
+        color: $color-2;
+        text-decoration: none;
+    }
 
 }

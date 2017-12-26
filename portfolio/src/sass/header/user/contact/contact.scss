@@ -90,7 +90,11 @@
         position: relative;
     }
 
-    &__point-ico {}
+    &__point-ico {
+        color: $color-4;
+        padding-right: 5px;
+    }
+
     &__point-data {}
 
 }

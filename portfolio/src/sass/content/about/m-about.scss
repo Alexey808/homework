@@ -1,15 +1,21 @@
 .about {
     @include flex(flex-start, center);
-    
+    flex-wrap: wrap;
+    align-content: flex-start;
+
     &__photo {
         width: 44%;
         height: 44%;
-        margin: 0 auto;
-        margin-top: 5px;
+        margin: 5px auto 0;
+        border-radius: 50%;
+        background-color: $color-3;
+        border: 5px solid $white;
+        overflow: hidden;
     }
 
     &__photo-i {
        margin-bottom: -4px; /*найти*/
+       max-width: 100%;
     }
 
     &__description {
@@ -17,19 +23,21 @@
     }
 
     &__title {
+        width: 100%;
         font-size: 2.18rem;
         margin-top: 5px;
         text-align: center;
         height: 48px;
+        color: $color-2;
     }
 
     &__text {
-        width: auto;
         margin: 0;
         font-size: 1rem;
-        padding: 0 9px;
+        overflow: auto;
+        padding: 0 10px;
         line-height: 24px;
-        height: auto;
+        font-weight: 300; 
     }
 
     &__button {
@@ -42,16 +50,39 @@
 
     &__button-txt {
         margin-right: 7px;
+        letter-spacing: 1px;
     }
 
-    &__button-dw {}
-    &__button-dw:hover {}
+    &__button-dw {
+        font-weight: bold;
+        border: 2px solid $color-5;
+        font-size: 14px;
+        color: $color-5;
+        text-align: center;
+        width: 169px;
+        height: 36px;
+        border-radius: 20px;
+        background-color: $color-3;
+        line-height: 36px;
+
+        &:hover {
+            background-color: $color-5;
+            color: $color-3;
+            cursor: pointer;
+        }
+    }
+
+    /* --- Анимация --- */
+    &__photo { @include an-zoomIn(1s); }
+    &__title { @include an-lightSpeedIn(1s); }
+    &__text { @include an-rotateInUpLeft(.8s); }
+    &__button { @include an-flipInX(2s); }
+    &__button-dw:hover {
+        transition: transform .3s;
+        transform: scale(1.1);
+    }
+    &__button-dw:active {
+        transform: scale(1);
+    }
 
 }
-
-/*Скролл*/
-.mCSB_container_wrapper {}
-.mCSB_container_wrapper>.mCSB_container {}
-.mCSB_draggerContainer {}
-.mCSB_dragger_bar {}
-.mCSB_draggerRail {}

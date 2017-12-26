@@ -1,21 +1,28 @@
 .content {
+	min-height: calc(100% - 115px);//+
+    padding-top: 80px;
+    color: $color-1;
+    background-color: $color-3;
+    width: 100%;
+    min-width: 300px;
 
-	min-height: calc(100% - 115px);
-    
     &__container {
-        width: 100%;
-        flex-wrap: wrap;
-        min-width: auto;
-        padding-top: 0px;
+        @include flex(space-between, stretch);
+        width: 100%;//+
+        flex-wrap: wrap;//+
+        //min-width: auto;//+
+        // padding-top: 0px;//+
+        background-color: $color-3;
     }
 
     &__menu {
-		width: 100%;
-		height: auto;
+        color: $color-2;
+		width: 100%;//+
+		//height: auto;//+
     }
 
     &__section {
-      	width: auto;
+      	//width: auto;//+
     }
 
 }

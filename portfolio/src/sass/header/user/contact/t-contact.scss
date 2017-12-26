@@ -1,8 +1,7 @@
 .contact {
-
     height: 100%;
     width: 100%;
-    @include flex(center, center);
+    @include flex(flex-end, center);
     margin-right: 10px;
 
     &__button-ico {
@@ -14,27 +13,105 @@
 
     }
 
-	&__button {
-        &:hover {}
-        &:hover:after {}
+    &__button {
+        border-bottom: none;
+        font-size: 18px;
+        color: $color-4;
+        font-weight: bold;
+        position: relative;
+   
+        &:hover {
+            color: $color-5;
+            cursor: pointer;
+            border-bottom: none;
+        }
+
+        &:hover:after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 65px;
+            background-color: rgba(85, 85, 85, 0);
+            left: -30px;
+            top: 0px;
+        }
     }
 
-    &__button:hover &__list {}
-
-	&__list {
+    &__list {
+        border: 1px solid $shadows;
+        border-radius: 10px;
+        background-color: $white;
+        position: absolute;
+        color: $color-1;
+        list-style: none;
+        font-size: 18px;
+        font-weight: normal;
+        padding: 10px 15px;
+        line-height: 40px;
+        z-index: 3;
         top: 40px;
         left: -80px;
 
-        &:before {}
-        &:after {}
+        &:before {
+            border-left: 10px solid transparent;
+            border-right: 0px solid transparent;
+            border-bottom: 10px solid $white;
+            left: 152px;
+            z-index: 2;
+            border-bottom-color: $shadows;
+            position: absolute;
+            bottom: 100%;
+        }
+
+        &:after {
+            border-left: 14px solid transparent;
+            border-right: 0px solid transparent;
+            border-bottom: 16px solid $shadows;
+            left: 150px;
+            border-bottom-color: $color-3;
+            position: absolute;
+            bottom: 100%;
+        }
     }
-    
-    &__list_hidden {}
-    &__point {}
+
+    &__list_hidden {
+        visibility: hidden;
+    }
+
+    &__point {
+        position: relative;
+    }
+
     &__point-link {
-        &:hover {}
+        text-decoration: none;
+        color: $color-1;
+        white-space: nowrap;
+   
+        &:hover {
+            color: $color-4;
+        }
     }
-	&__point-ico {}
+
+	&__point-ico {
+        color: $color-4;
+        padding-right: 5px;
+    }
+
 	&__point-data {}
 
+}
+
+
+/* Анимация */
+.contact__button:hover > .contact__list, {
+    animation: shows .3s ease-out forwards;
+    visibility: visible;
+}
+
+@keyframes shows {
+    0% { 
+        opacity: 0;
+        transform: translate(10px, -10px);
+    }
+    100% { opacity: 1; }
 }

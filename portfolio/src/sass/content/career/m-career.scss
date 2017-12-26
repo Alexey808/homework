@@ -1,29 +1,42 @@
 .career {
-    width: auto;
+    // width: auto;
     padding-left: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
 
     &__title {
         width: 100%;
+        color: $color-2;
+        font-size: 2.18rem;
+        font-weight: 600;
         padding: 0 0 10px 0;
         text-align: center;
     }
 
     &__picture {
+        width: 220px;
+        height: 220px;
+        border-radius: 9px;
+        background-color: $color-1;
+        overflow: hidden;
+        background-position: center center;
         margin: 0px auto;
     }
 
     &__boxC {
-        width: auto;
+        @include flex(flex-end, stretch);
         padding: 0 10px;
         margin: 18px auto 27px;
     }
     
-    &__picture-img {}
+    &__picture-img {
+        margin: -7px 0 0 -93px;
+    }
 
     /* --- Анимация --- */
-    &__title {}
-    &__picture {}
-    &__boxC:after {}
+    &__title { @include an-lightSpeedIn(1s); }
+    &__picture { @include an-zoomIn(1s); }
     
 }
