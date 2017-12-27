@@ -137,47 +137,6 @@ gulp.task('style:build', ()=> {
 
 });
 
-//     gulp.src(path.src.style)
-
-//         // .pipe(sourceMaps.init())
-//         .pipe(sass.sync().on('error', sass.logError))
-//         .pipe(autoprefixer({browsers: ['last 9 versions'], cascade: false}))
-//         // .pipe(cleanCSS())
-//         .pipe(concat('main.css'))
-//         // .pipe(sourceMaps.write())
-//         .pipe(gulp.dest(path.build.css))
-        
-//     gulp.src(path.src.style + 'm-index.scss')
-//         // .pipe(sourceMaps.init())
-//         .pipe(sass.sync().on('error', sass.logError))
-//         .pipe(autoprefixer({browsers: ['last 9 versions'], cascade: false}))
-//         // .pipe(cleanCSS())
-//         .pipe(concat('m-main.css'))
-//         // .pipe(sourceMaps.write())
-//         .pipe(gulp.dest(path.build.css))
-
-//     gulp.src(path.src.style + 't-index.scss')
-//         // .pipe(sourceMaps.init())
-//         .pipe(sass.sync().on('error', sass.logError))
-//         .pipe(autoprefixer({browsers: ['last 9 versions'], cascade: false}))
-//         // .pipe(cleanCSS())
-//         .pipe(concat('t-main.css'))
-//         // .pipe(sourceMaps.write())
-//         .pipe(gulp.dest(path.build.css))
-//         .pipe(browserSync.reload({stream: true})); 
-// });
-
-
-
-gulp.task('test', ()=> {
-    // gulp.src(path.src.style + 'm-index.scss');
-  
-    // console.log(path.src.style + 'm-index.scss');
-
-    console.log(path.src.style);
-
-    // console.log("s-mtest".match(/[m]-test/));
-})
 // Сборка js -------------------------------------------------------+
 gulp.task('js:build', ()=> {
     gulp.src(path.src.js)
