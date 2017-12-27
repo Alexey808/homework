@@ -91,19 +91,6 @@ gulp.task('html:build', ()=> {
 });
 
 // Сборка css ------------------------------------------------------+
-gulp.task('style:build', ()=> { console.log(gulp.src(path.src.style));
-    gulp.src(path.src.style)
-        // .pipe(sourceMaps.init())
-        .pipe(sass.sync().on('error', sass.logError))
-        .pipe(autoprefixer({browsers: ['last 9 versions'], cascade: false}))
-        // .pipe(cleanCSS())
-        .pipe(concat('main.css'))
-        // .pipe(sourceMaps.write())
-        .pipe(gulp.dest(path.build.css))
-        .pipe(browserSync.reload({stream: true})); 
-
-});
-
 gulp.task('style:build', ()=> {
 
     gulp.src(path.src.style + 'index.scss') // 'src/sass/index.scss'
