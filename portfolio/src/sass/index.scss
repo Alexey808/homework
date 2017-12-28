@@ -8,13 +8,13 @@
 
 
 @media screen and (min-width: 981px) {
-	@import "desktop/hello/hello.scss";
+    @import "desktop/hello/hello.scss";
 }
 @media screen and (max-width: 980px) and (min-width: 521px) {
-	@import "tablet/hello/t-hello.scss";
+    @import "tablet/hello/t-hello.scss";
 }
 @media screen and (max-width: 520px) {
-	@import "mobile/hello/m-hello.scss";
+    @import "mobile/hello/m-hello.scss";
 }
 
 /* --- header ------------------------------------------ */
