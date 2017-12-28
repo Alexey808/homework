@@ -10317,9 +10317,6 @@ return t.apply(e,arguments)}}function a(){this.onload=null,e(t).addClass(d[2]),r
 }
 
 
-console.log('test');
-
-
 // --- Mobile Detect
 var md = new MobileDetect(window.navigator.userAgent);
 
