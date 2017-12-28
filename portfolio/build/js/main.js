@@ -10322,12 +10322,6 @@ var md = new MobileDetect(window.navigator.userAgent);
 
 console.log(md);
 
-
-
-
-// var md = new MobileDetect(require.headers['user-agent']);
-
-
 md.setStyle = function (x) {
     var a=document.createElement("link");
     a.rel="stylesheet";

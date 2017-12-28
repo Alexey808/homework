@@ -5,27 +5,27 @@
 @import "helpers/main.scss";
 
 /* --- hello ------------------------------------------- */
-@import "hello/hello.scss"; /*десктопная*/
+@import "tablet/hello/t-hello.scss"; /*десктопная*/
 
 /* --- header ------------------------------------------ */
-@import "header/t-header.scss";
-@import "header/user/t-user.scss";
-@import "header/user/contact/t-contact.scss";
+@import "tablet/header/t-header.scss";
+@import "tablet/header/user/t-user.scss";
+@import "tablet/header/user/contact/t-contact.scss";
 
 /* --- content ----------------------------------------- */
-@import "content/t-content.scss";
-@import "content/menu/t-menu.scss";
+@import "tablet/content/t-content.scss";
+@import "tablet/content/menu/t-menu.scss";
 /* --- about --- */
-@import "content/about/t-about.scss";
+@import "tablet/content/about/t-about.scss";
 /* --- career --- */
-@import "content/career/t-career.scss";
-@import "content/career/boxC/t-boxC.scss";
+@import "tablet/content/career/t-career.scss";
+@import "tablet/content/career/boxC/t-boxC.scss";
 /* --- portfolio --- */
-@import "content/portfolio/t-portfolio.scss";
-@import "content/portfolio/boxP/t-boxP.scss";
-@import "content/portfolio/boxP/item/t-item.scss";
+@import "tablet/content/portfolio/t-portfolio.scss";
+@import "tablet/content/portfolio/boxP/t-boxP.scss";
+@import "tablet/content/portfolio/boxP/item/t-item.scss";
 
 /* --- footer ------------------------------------------ */
-@import "footer/t-footer.scss";
-@import "footer/soc/t-soc.scss";
+@import "tablet/footer/t-footer.scss";
+@import "tablet/footer/soc/t-soc.scss";
 

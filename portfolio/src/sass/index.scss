@@ -5,26 +5,26 @@
 @import "helpers/main.scss";
 
 /* --- hello ------------------------------------------- */
-@import "hello/hello.scss";
+@import "desktop/hello/hello.scss";
 
 /* --- header ------------------------------------------ */
-@import "header/header.scss";
-@import "header/user/user.scss";
-@import "header/user/contact/contact.scss";
+@import "desktop/header/header.scss";
+@import "desktop/header/user/user.scss";
+@import "desktop/header/user/contact/contact.scss";
 
 /* --- content ----------------------------------------- */
-@import "content/content.scss";
-@import "content/menu/menu.scss";
+@import "desktop/content/content.scss";
+@import "desktop/content/menu/menu.scss";
 /* --- about --- */
-@import "content/about/about.scss";
+@import "desktop/content/about/about.scss";
 /* --- career --- */
-@import "content/career/career.scss";
-@import "content/career/boxC/boxC.scss";
+@import "desktop/content/career/career.scss";
+@import "desktop/content/career/boxC/boxC.scss";
 /* --- portfolio --- */
-@import "content/portfolio/portfolio.scss";
-@import "content/portfolio/boxP/boxP.scss";
-@import "content/portfolio/boxP/item/item.scss";
+@import "desktop/content/portfolio/portfolio.scss";
+@import "desktop/content/portfolio/boxP/boxP.scss";
+@import "desktop/content/portfolio/boxP/item/item.scss";
 
 /* --- footer ------------------------------------------ */
-@import "footer/footer.scss";
-@import "footer/soc/soc.scss";
+@import "desktop/footer/footer.scss";
+@import "desktop/footer/soc/soc.scss";
