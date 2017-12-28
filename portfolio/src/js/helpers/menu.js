@@ -1,4 +1,4 @@
-function menu(x) {
+﻿function menu(x) {
 
 	/* меню */
 	var point = document.querySelectorAll('nav.menu__point');

@@ -10278,7 +10278,7 @@ return t.apply(e,arguments)}}function a(){this.onload=null,e(t).addClass(d[2]),r
 
 
 // --- Меню
-function menu(x) {
+﻿function menu(x) {
 
 	/* меню */
 	var point = document.querySelectorAll('nav.menu__point');
@@ -10315,6 +10315,9 @@ function menu(x) {
 	}
 	
 }
+
+
+console.log('test');
 
 
 // --- Mobile Detect
