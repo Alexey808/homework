@@ -1,0 +1,30 @@
+/* --- helpers ----------------------------------------- */
+@import "helpers/variables.scss";
+@import "helpers/fonts.scss";
+@import "helpers/mixin.scss";
+@import "helpers/main.scss";
+
+/* --- hello ------------------------------------------- */
+@import "desktop/hello/hello.scss";
+
+/* --- header ------------------------------------------ */
+@import "desktop/header/header.scss";
+@import "desktop/header/user/user.scss";
+@import "desktop/header/user/contact/contact.scss";
+
+/* --- content ----------------------------------------- */
+@import "desktop/content/content.scss";
+@import "desktop/content/menu/menu.scss";
+/* --- about --- */
+@import "desktop/content/about/about.scss";
+/* --- career --- */
+@import "desktop/content/career/career.scss";
+@import "desktop/content/career/boxC/boxC.scss";
+/* --- portfolio --- */
+@import "desktop/content/portfolio/portfolio.scss";
+@import "desktop/content/portfolio/boxP/boxP.scss";
+@import "desktop/content/portfolio/boxP/item/item.scss";
+
+/* --- footer ------------------------------------------ */
+@import "desktop/footer/footer.scss";
+@import "desktop/footer/soc/soc.scss";

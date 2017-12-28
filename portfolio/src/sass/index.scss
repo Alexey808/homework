@@ -5,26 +5,108 @@
 @import "helpers/main.scss";
 
 /* --- hello ------------------------------------------- */
-@import "desktop/hello/hello.scss";
+
+
+@media screen and (min-width: 981px) {
+	@import "desktop/hello/hello.scss";
+}
+@media screen and (max-width: 980px) and (min-width: 521px) {
+	@import "tablet/hello/t-hello.scss";
+}
+@media screen and (max-width: 520px) {
+	@import "mobile/hello/m-hello.scss";
+}
 
 /* --- header ------------------------------------------ */
-@import "desktop/header/header.scss";
-@import "desktop/header/user/user.scss";
-@import "desktop/header/user/contact/contact.scss";
+
+@media screen and (min-width: 981px) {
+	@import "desktop/header/header.scss";
+	@import "desktop/header/user/user.scss";
+	@import "desktop/header/user/contact/contact.scss";
+}
+@media screen and (max-width: 980px) and (min-width: 521px) {
+	@import "tablet/header/t-header.scss";
+	@import "tablet/header/user/t-user.scss";
+	@import "tablet/header/user/contact/t-contact.scss";
+}
+@media screen and (max-width: 520px) {
+	@import "mobile/header/m-header.scss";
+	@import "mobile/header/user/m-user.scss";
+	@import "mobile/header/user/contact/m-contact.scss";
+}
 
 /* --- content ----------------------------------------- */
-@import "desktop/content/content.scss";
-@import "desktop/content/menu/menu.scss";
+
+@media screen and (min-width: 981px) {
+	@import "desktop/content/content.scss";
+	@import "desktop/content/menu/menu.scss";
+}
+@media screen and (max-width: 980px) and (min-width: 521px) {
+	@import "tablet/content/t-content.scss";
+	@import "tablet/content/menu/t-menu.scss";
+}
+@media screen and (max-width: 520px) {
+	@import "mobile/content/m-content.scss";
+	@import "mobile/content/menu/m-menu.scss";
+}
+
 /* --- about --- */
-@import "desktop/content/about/about.scss";
+
+@media screen and (min-width: 981px) {
+	@import "desktop/content/about/about.scss";
+}
+@media screen and (max-width: 980px) and (min-width: 521px) {
+	@import "tablet/content/about/t-about.scss";
+}
+@media screen and (max-width: 520px) {
+	@import "mobile/content/about/m-about.scss";
+}
+
+
 /* --- career --- */
-@import "desktop/content/career/career.scss";
-@import "desktop/content/career/boxC/boxC.scss";
+
+@media screen and (min-width: 981px) {
+	@import "desktop/content/career/career.scss";
+	@import "desktop/content/career/boxC/boxC.scss";
+}
+@media screen and (max-width: 980px) and (min-width: 521px) {
+	@import "tablet/content/career/t-career.scss";
+	@import "tablet/content/career/boxC/t-boxC.scss";
+}
+@media screen and (max-width: 520px) {
+	@import "mobile/content/career/m-career.scss";
+	@import "mobile/content/career/boxC/m-boxC.scss";
+}
+
 /* --- portfolio --- */
-@import "desktop/content/portfolio/portfolio.scss";
-@import "desktop/content/portfolio/boxP/boxP.scss";
-@import "desktop/content/portfolio/boxP/item/item.scss";
+
+@media screen and (min-width: 981px) {
+	@import "desktop/content/portfolio/portfolio.scss";
+	@import "desktop/content/portfolio/boxP/boxP.scss";
+	@import "desktop/content/portfolio/boxP/item/item.scss";
+}
+@media screen and (max-width: 980px) and (min-width: 521px) {
+	@import "tablet/content/portfolio/t-portfolio.scss";
+	@import "tablet/content/portfolio/boxP/t-boxP.scss";
+	@import "tablet/content/portfolio/boxP/item/t-item.scss";
+}
+@media screen and (max-width: 520px) {
+	@import "mobile/content/portfolio/m-portfolio.scss";
+	@import "mobile/content/portfolio/boxP/m-boxP.scss";
+	@import "mobile/content/portfolio/boxP/item/m-item.scss";
+}
 
 /* --- footer ------------------------------------------ */
-@import "desktop/footer/footer.scss";
-@import "desktop/footer/soc/soc.scss";
+
+@media screen and (min-width: 981px) {
+	@import "desktop/footer/footer.scss";
+	@import "desktop/footer/soc/soc.scss";
+}
+@media screen and (max-width: 980px) and (min-width: 521px) {
+	@import "tablet/footer/t-footer.scss";
+	@import "tablet/footer/soc/t-soc.scss";
+}
+@media screen and (max-width: 520px) {
+	@import "mobile/footer/m-footer.scss";
+	@import "mobile/footer/soc/m-soc.scss";
+}
