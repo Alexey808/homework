@@ -11,6 +11,7 @@ var gulpif        = require('gulp-if');
 var clean         = require('gulp-clean');
 var browserSync   = require('browser-sync');
 var uglify        = require('gulp-uglify');
+var rigger        = require('gulp-rigger');
 
 
 //Дефолтный таск ---------------------------------------------------+
@@ -40,13 +41,14 @@ var path = {
         html: 'src/*.html', 
         // style: 'src/sass/index.scss',
         style: 'src/sass/',
-        js: 'src/js/**/*.js',
+        // js: 'src/js/**/*.js',
+        js: 'src/js/index.js',
         img: 'src/img/**/*.*'
     },
     watch: {
         html: 'src/*.html',
         style: 'src/sass/**/*.*',
-        js: 'src/main.js',
+        js: 'src/js/index.js',
         img: 'src/img/*.*'
     },
     clean: './build/*'
@@ -97,7 +99,7 @@ gulp.task('style:build', ()=> {
         .pipe(sourceMaps.init())
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(autoprefixer({browsers: ['last 9 versions'], cascade: false}))
-        .pipe(cleanCSS())
+        // .pipe(cleanCSS())
         .pipe(concat('main.css'))
         .pipe(sourceMaps.write())
         .pipe(gulp.dest(path.build.css)); // 'build/css/'
@@ -106,7 +108,7 @@ gulp.task('style:build', ()=> {
         .pipe(sourceMaps.init())
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(autoprefixer({browsers: ['last 9 versions'], cascade: false}))
-        .pipe(cleanCSS())
+        // .pipe(cleanCSS())
         .pipe(concat('m-main.css'))
         .pipe(sourceMaps.write())
         .pipe(gulp.dest(path.build.css)); // 'build/css/'
@@ -115,7 +117,7 @@ gulp.task('style:build', ()=> {
         .pipe(sourceMaps.init())
         .pipe(sass.sync().on('error', sass.logError))
         .pipe(autoprefixer({browsers: ['last 9 versions'], cascade: false}))
-        .pipe(cleanCSS())
+        // .pipe(cleanCSS())
         .pipe(concat('t-main.css'))
         .pipe(sourceMaps.write())
         .pipe(gulp.dest(path.build.css)) // 'build/css/'
@@ -127,6 +129,7 @@ gulp.task('style:build', ()=> {
 // Сборка js -------------------------------------------------------+
 gulp.task('js:build', ()=> {
     gulp.src(path.src.js)
+        .pipe(rigger())
         // .pipe(uglify())
         .pipe(concat('main.js'))
         .pipe(gulp.dest(path.build.js))
@@ -145,3 +148,4 @@ gulp.task('image:build', ()=> {
         .pipe(gulp.dest(path.build.img))
         .pipe(browserSync.reload({stream: true})); 
 });
+

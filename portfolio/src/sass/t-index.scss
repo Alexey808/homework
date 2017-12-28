@@ -1,1 +1,31 @@
-//t-index.scss
+/* --- helpers ----------------------------------------- */
+@import "helpers/variables.scss";
+@import "helpers/fonts.scss";
+@import "helpers/mixin.scss";
+@import "helpers/main.scss";
+
+/* --- hello ------------------------------------------- */
+@import "hello/hello.scss"; /*десктопная*/
+
+/* --- header ------------------------------------------ */
+@import "header/t-header.scss";
+@import "header/user/t-user.scss";
+@import "header/user/contact/t-contact.scss";
+
+/* --- content ----------------------------------------- */
+@import "content/t-content.scss";
+@import "content/menu/t-menu.scss";
+/* --- about --- */
+@import "content/about/t-about.scss";
+/* --- career --- */
+@import "content/career/t-career.scss";
+@import "content/career/boxC/t-boxC.scss";
+/* --- portfolio --- */
+@import "content/portfolio/t-portfolio.scss";
+@import "content/portfolio/boxP/t-boxP.scss";
+@import "content/portfolio/boxP/item/t-item.scss";
+
+/* --- footer ------------------------------------------ */
+@import "footer/t-footer.scss";
+@import "footer/soc/t-soc.scss";
+
