@@ -10349,13 +10349,14 @@ md.setStyle = function (x) {
 
 // location.href = (md.mobileGrade() === 'A') ? '/mobile/' : '/lynx/';
 
-if (md.mobile()) {
-	console.log('run setStyle for mobile');
-	md.setStyle('css/m-main.css');
+
+if (md.mobile() && md.phone()) {
+    console.log('run setStyle for mobile');
+    md.setStyle('css/m-main.css');
 } else if (md.tablet()) {
-	console.log('run setStyle for tablet');
-	md.setStyle('css/t-main.css');
+    console.log('run setStyle for tablet');
+    md.setStyle('css/t-main.css');
 } else {
-	console.log('run setStyle for desktop');
+    console.log('run setStyle for desktop');
     md.setStyle('css/main.css');
 }
